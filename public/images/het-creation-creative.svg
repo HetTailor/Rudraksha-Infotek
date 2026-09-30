@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" fill="none">
+  <defs>
+    <linearGradient id="sqPosterPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcf8f2" />
+      <stop offset="45%" stop-color="#f7efe3" />
+      <stop offset="100%" stop-color="#ebdcc7" />
+    </linearGradient>
+
+    <linearGradient id="sqEspressoRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f1008" />
+      <stop offset="50%" stop-color="#2d170c" />
+      <stop offset="100%" stop-color="#190d06" />
+    </linearGradient>
+
+    <linearGradient id="sqGoldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0b865" />
+      <stop offset="50%" stop-color="#c59b27" />
+      <stop offset="100%" stop-color="#916a18" />
+    </linearGradient>
+
+    <linearGradient id="sqBottomBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#23120a" />
+      <stop offset="50%" stop-color="#2e180e" />
+      <stop offset="100%" stop-color="#1c0e07" />
+    </linearGradient>
+
+    <filter id="sqBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#2c170d" flood-opacity="0.25" />
+    </filter>
+
+    <filter id="sqZoomShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+
+    <clipPath id="sqZoom1">
+      <circle cx="85" cy="85" r="82" />
+    </clipPath>
+    <clipPath id="sqZoom2">
+      <circle cx="80" cy="80" r="77" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Background Paper & Hallway Runway Background -->
+  <rect width="1080" height="1080" fill="url(#sqPosterPaper)" />
+
+  <!-- Luxury Hallway Perspective on Right Half -->
+  <g opacity="0.95">
+    <image href="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=900&amp;q=85" x="430" y="0" width="650" height="980" preserveAspectRatio="xMidYMid slice" opacity="0.45" />
+    <linearGradient id="sqHallwayWash" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbf7f0" stop-opacity="1" />
+      <stop offset="32%" stop-color="#fbf7f0" stop-opacity="0.85" />
+      <stop offset="70%" stop-color="#eddcc6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#dcc19e" stop-opacity="0.1" />
+    </linearGradient>
+    <rect x="320" y="0" width="760" height="980" fill="url(#sqHallwayWash)" />
+  </g>
+
+  <!-- Corner Golden Foliage Flourishes (Top-Left & Bottom-Left) -->
+  <g stroke="#c59b27" stroke-width="2" fill="none" opacity="0.65">
+    <path d="M 24 24 Q 65 24 90 45 Q 52 65 24 24 Z" fill="#c59b27" fill-opacity="0.15" />
+    <path d="M 30 30 C 56 46 66 84 80 110" />
+    <path d="M 52 40 C 74 36 96 52 108 66" />
+    <circle cx="108" cy="66" r="3.5" fill="#c59b27" />
+    <circle cx="80" cy="110" r="3.5" fill="#c59b27" />
+    <path d="M 18 70 Q 38 88 56 82" />
+
+    <!-- Bottom-Left Leaves -->
+    <g transform="translate(20, 890)">
+      <path d="M 12 65 Q 45 68 62 48 Q 36 34 12 65 Z" fill="#c59b27" fill-opacity="0.15" />
+      <path d="M 18 58 C 40 45 52 22 66 4" />
+      <circle cx="66" cy="4" r="3.5" fill="#c59b27" />
+    </g>
+  </g>
+
+  <!-- Top Leaf Border Flourish -->
+  <g stroke="#c59b27" stroke-width="2" fill="none" opacity="0.6" transform="translate(440, 12)">
+    <path d="M 0 25 Q 32 8 65 25 Q 32 36 0 25 Z" fill="#c59b27" fill-opacity="0.18" />
+    <path d="M 65 25 Q 98 8 130 25" />
+    <circle cx="130" cy="25" r="3.5" fill="#c59b27" />
+  </g>
+
+  <!-- 2. TOP-LEFT LOGO: HET CREATION -->
+  <g transform="translate(52, 30)">
+    <!-- Fashion Illustrated Line-Art Sketch of Indian Woman in Outfit -->
+    <g transform="translate(26, 10)">
+      <path d="M 26 11 C 20 5 24 -4 31 -2 C 38 0 37 9 33 15" fill="none" stroke="#e07a5f" stroke-width="3" stroke-linecap="round" />
+      <circle cx="29" cy="8" r="4.5" fill="#f4a261" />
+      <path d="M 29 15 L 29 30 L 22 44 L 36 44 Z" fill="none" stroke="#2a9d8f" stroke-width="2.6" stroke-linecap="round" />
+      <path d="M 22 44 L 11 100 C 22 104 36 104 47 100 L 36 44" fill="none" stroke="#2a9d8f" stroke-width="2.6" />
+      <line x1="29" y1="44" x2="29" y2="100" stroke="#2a9d8f" stroke-width="1.8" stroke-dasharray="3 3" />
+      <path d="M 22 32 C 9 50 5 78 4 96 C 9 101 15 98 16 93 C 18 72 22 50 27 40" fill="none" stroke="#e76f51" stroke-width="2.6" stroke-linecap="round" />
+      <circle cx="18" cy="82" r="2" fill="#e76f51" />
+      <circle cx="25" cy="90" r="2" fill="#2a9d8f" />
+      <circle cx="32" cy="86" r="2" fill="#e76f51" />
+      <circle cx="39" cy="92" r="2" fill="#2a9d8f" />
+      <line x1="22" y1="100" x2="20" y2="110" stroke="#264653" stroke-width="2.2" />
+      <line x1="36" y1="100" x2="38" y2="110" stroke="#264653" stroke-width="2.2" />
+    </g>
+
+    <!-- Brand Wordmark Calligraphy -->
+    <g transform="translate(120, 10)">
+      <g fill="#2c170d">
+        <!-- Letter H -->
+        <path d="M 10 65 C 14 50 18 28 20 11 C 22 5 27 4 30 7 C 32 12 29 25 27 40 C 32 28 41 22 50 25 C 60 28 60 40 56 58 C 54 65 52 70 56 72 C 60 74 63 68 65 61 L 68 63 C 65 74 58 79 50 76 C 45 72 47 63 49 54 C 52 40 50 32 43 31 C 36 29 29 36 25 47 C 22 58 18 72 16 79 C 14 85 9 83 10 65 Z" />
+        <!-- Letter e -->
+        <path d="M 67 58 C 67 45 76 40 85 40 C 95 40 99 47 97 60 L 76 61 C 76 68 81 76 90 74 C 95 72 99 67 101 63 L 104 67 C 101 74 94 79 85 79 C 74 79 67 70 67 58 Z M 88 45 C 81 45 77 50 76 56 L 90 54 C 92 49 88 45 88 45 Z" />
+        <!-- Letter t -->
+        <path d="M 112 25 C 115 25 117 29 117 32 L 117 43 L 130 43 L 130 49 L 117 49 L 115 68 C 115 74 119 77 124 76 C 128 74 130 70 131 68 L 133 72 C 130 77 124 81 119 81 C 110 81 108 74 108 65 L 110 49 L 103 49 L 103 43 L 110 43 L 112 25 Z" />
+        <!-- Sweeping tail underline flourish -->
+        <path d="M 22 72 C 47 86 90 90 140 83 C 158 79 176 68 191 58 C 193 59 193 63 191 65 C 173 77 153 88 133 92 C 83 101 40 94 14 77 Z" />
+      </g>
+      <!-- "Creation" in refined serif -->
+      <text x="122" y="104" fill="#2c170d" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="700" letter-spacing="2">
+        Creation
+      </text>
+    </g>
+  </g>
+
+  <!-- Ornate Decorative Divider under Logo -->
+  <g stroke="#c59b27" stroke-width="2" opacity="0.8" transform="translate(48, 172)">
+    <line x1="0" y1="0" x2="380" y2="0" />
+    <path d="M 190 -8 L 198 0 L 190 8 L 182 0 Z" fill="#c59b27" />
+    <circle cx="172" cy="0" r="2.5" fill="#c59b27" />
+    <circle cx="208" cy="0" r="2.5" fill="#c59b27" />
+  </g>
+
+  <!-- 3. HEADLINE: FASHION SALE -->
+  <g transform="translate(52, 230)">
+    <text x="96" y="0" fill="#845722" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="32" font-weight="700" letter-spacing="7">
+      FASHION
+    </text>
+    <text x="0" y="105" fill="#2c170d" font-family="'Playfair Display', 'Cinzel', Georgia, serif" font-size="112" font-weight="900" letter-spacing="-2">
+      SALE
+    </text>
+    <!-- Scrollwork divider -->
+    <g stroke="#c59b27" stroke-width="2.2" opacity="0.85" transform="translate(0, 134)">
+      <line x1="0" y1="0" x2="375" y2="0" />
+      <path d="M 170 0 Q 188 -10 188 0 Q 188 10 206 0" fill="none" />
+      <circle cx="188" cy="0" r="4" fill="#c59b27" />
+    </g>
+  </g>
+
+  <!-- 4. 25% DISCOUNT CIRCULAR PROMOTION BADGE -->
+  <g transform="translate(240, 520)" filter="url(#sqBadgeShadow)">
+    <!-- Sunburst Radiating Lines -->
+    <g stroke="#c59b27" stroke-width="4.5" stroke-linecap="round" opacity="0.8">
+      <line x1="-165" y1="-90" x2="-144" y2="-79" />
+      <line x1="-176" y1="-45" x2="-151" y2="-40" />
+      <line x1="-176" y1="36" x2="-151" y2="32" />
+      <line x1="-162" y1="83" x2="-140" y2="72" />
+      <line x1="144" y1="-79" x2="165" y2="-90" />
+      <line x1="151" y1="-40" x2="176" y2="-45" />
+      <line x1="151" y1="32" x2="176" y2="36" />
+      <line x1="140" y1="72" x2="162" y2="83" />
+    </g>
+
+    <circle cx="0" cy="0" r="148" fill="none" stroke="#c59b27" stroke-width="5" stroke-dasharray="14 5" opacity="0.9" />
+    <circle cx="0" cy="0" r="139" fill="none" stroke="#996515" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="130" fill="#fdfbf7" stroke="#ebdcc7" stroke-width="3" />
+
+    <text x="0" y="-62" fill="#2c170d" font-family="'Montserrat', system-ui, sans-serif" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">
+      FLAT
+    </text>
+    <text x="0" y="25" fill="#2c170d" font-family="'Playfair Display', Georgia, serif" font-size="98" font-weight="900" letter-spacing="-2" text-anchor="middle">
+      25%
+    </text>
+    <text x="0" y="65" fill="#2c170d" font-family="'Montserrat', system-ui, sans-serif" font-size="24" font-weight="900" letter-spacing="3" text-anchor="middle">
+      DISCOUNT
+    </text>
+
+    <!-- Curved Dark Espresso Ribbon across bottom -->
+    <g transform="translate(0, 86)">
+      <path d="M -170 18 L -144 -14 L 144 -14 L 170 18 L 152 32 L 144 25 L -144 25 L -152 32 Z" fill="url(#sqEspressoRibbon)" stroke="#c59b27" stroke-width="1.8" />
+      <text x="0" y="11" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="21" font-weight="900" letter-spacing="2.2" text-anchor="middle">
+        ON ALL COLLECTIONS
+      </text>
+    </g>
+  </g>
+
+  <!-- 5. SALE DATES BADGE -->
+  <g transform="translate(76, 712)">
+    <rect x="0" y="0" width="335" height="68" rx="14" fill="#f5ede0" stroke="#c59b27" stroke-width="1.8" />
+    <g transform="translate(18, 14)" stroke="#2c170d" stroke-width="3.2" fill="none">
+      <rect x="0" y="0" width="40" height="36" rx="5" />
+      <line x1="0" y1="12" x2="40" y2="12" />
+      <line x1="9" y1="-4" x2="9" y2="4" stroke-linecap="round" />
+      <line x1="31" y1="-4" x2="31" y2="4" stroke-linecap="round" />
+      <circle cx="11" cy="20" r="1.8" fill="#2c170d" stroke="none" />
+      <circle cx="20" cy="20" r="1.8" fill="#2c170d" stroke="none" />
+      <circle cx="29" cy="20" r="1.8" fill="#2c170d" stroke="none" />
+      <circle cx="11" cy="27" r="1.8" fill="#2c170d" stroke="none" />
+      <circle cx="20" cy="27" r="1.8" fill="#2c170d" stroke="none" />
+    </g>
+    <g transform="translate(72, 25)">
+      <text x="0" y="0" fill="#6d4c26" font-family="system-ui, sans-serif" font-size="16" font-weight="800" letter-spacing="1.5">
+        SALE DATES
+      </text>
+      <text x="0" y="29" fill="#2c170d" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="900" letter-spacing="0.5">
+        1 TO 25 AUGUST
+      </text>
+    </g>
+  </g>
+
+  <!-- 6. LIMITED TIME OFFER & VISIT STORE CTA BUTTON -->
+  <g transform="translate(68, 812)">
+    <text x="175" y="0" fill="#2c170d" font-family="'Brush Script MT', 'Dancing Script', 'Playfair Display', cursive, serif" font-size="36" font-weight="700" font-style="italic" text-anchor="middle">
+      — Limited Time Offer —
+    </text>
+
+    <!-- Visit Store Pill Button -->
+    <g transform="translate(65, 22)">
+      <rect x="0" y="0" width="220" height="50" rx="25" fill="#2c170d" />
+      <text x="32" y="32" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="1.4">
+        VISIT STORE
+      </text>
+      <circle cx="188" cy="25" r="14" fill="#ffffff" />
+      <path d="M 183 25 L 192 25 M 188 20 L 193 25 L 188 30" stroke="#2c170d" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- 7. FASHION MODEL: HIGH-RES INDIAN MODEL IN OCHRE/GOLD SUIT -->
+  <g transform="translate(520, 20)">
+    <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=900&amp;q=85" x="-20" y="0" width="560" height="960" preserveAspectRatio="xMidYMin slice" />
+
+    <linearGradient id="sqModelEdgeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fcf8f2" stop-opacity="1" />
+      <stop offset="12%" stop-color="#fcf8f2" stop-opacity="0.75" />
+      <stop offset="28%" stop-color="#fcf8f2" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#fcf8f2" stop-opacity="0" />
+    </linearGradient>
+    <rect x="-20" y="0" width="220" height="960" fill="url(#sqModelEdgeFade)" />
+  </g>
+
+  <!-- 8. PRODUCT DETAIL INSET ZOOM CIRCLES (Right Flank) -->
+  <!-- Inset 1: Neckline Stitchwork -->
+  <g transform="translate(870, 140)" filter="url(#sqZoomShadow)">
+    <circle cx="85" cy="85" r="85" fill="#ffffff" stroke="url(#sqGoldBorder)" stroke-width="4.5" />
+    <g clip-path="url(#sqZoom1)">
+      <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=900&amp;q=85" x="-130" y="-50" width="430" height="430" preserveAspectRatio="xMidYMid slice" />
+      <circle cx="85" cy="85" r="82" fill="#d4af37" opacity="0.12" />
+    </g>
+  </g>
+
+  <!-- Inset 2: Hemline Embroidery Texture -->
+  <g transform="translate(895, 490)" filter="url(#sqZoomShadow)">
+    <circle cx="80" cy="80" r="80" fill="#ffffff" stroke="url(#sqGoldBorder)" stroke-width="4.5" />
+    <g clip-path="url(#sqZoom2)">
+      <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=900&amp;q=85" x="-145" y="-210" width="430" height="430" preserveAspectRatio="xMidYMid slice" />
+      <circle cx="80" cy="80" r="77" fill="#c59b27" opacity="0.12" />
+    </g>
+  </g>
+
+  <!-- 9. BOTTOM LOCATION FOOTER STRIP (FULL WIDTH) -->
+  <g transform="translate(0, 975)">
+    <rect x="0" y="0" width="1080" height="105" fill="url(#sqBottomBar)" />
+    <!-- Golden Location Pin -->
+    <g transform="translate(150, 25)">
+      <g fill="#c59b27">
+        <path d="M 14 0 C 6.27 0 0 6.27 0 14 C 0 24.5 14 36.7 14 36.7 C 14 36.7 28 24.5 28 14 C 28 6.27 21.73 0 14 0 Z M 14 19.2 C 11.1 19.2 8.75 16.85 8.75 14 C 8.75 11.15 11.1 8.75 14 8.75 C 16.9 8.75 19.25 11.15 19.25 14 C 19.25 16.85 16.9 19.2 14 19.2 Z" />
+      </g>
+    </g>
+    <!-- Store Address in Crisp White Lettering -->
+    <g transform="translate(195, 30)">
+      <text x="0" y="20" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">
+        SHOP NO 9, SHREE SIDDHESHWAR HAPPY HOME,
+      </text>
+      <text x="0" y="48" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">
+        OPP. MADHUVAN ELEGANCE, HARNI, VADODARA – 390022
+      </text>
+    </g>
+  </g>
+</svg>

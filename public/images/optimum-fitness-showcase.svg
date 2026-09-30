@@ -1,0 +1,387 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" fill="none">
+  <defs>
+    <!-- Studio Background Gradients -->
+    <linearGradient id="studioCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <radialGradient id="redEnergyAmbient" cx="30%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ea384c" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#ea384c" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="goldEnergyAmbient" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Post Photo Vignettes -->
+    <linearGradient id="photoDarkLeftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.88" />
+      <stop offset="42%" stop-color="#05070a" stop-opacity="0.75" />
+      <stop offset="70%" stop-color="#090d14" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="photoBottomGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.95" />
+      <stop offset="35%" stop-color="#000000" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="redStripGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="50%" stop-color="#ea384c" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="creativeDropShadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+    <filter id="sideCardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <filter id="boldTextGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.9" />
+    </filter>
+    <filter id="redTextShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#000000" flood-opacity="0.95" />
+    </filter>
+
+    <!-- Clip Paths -->
+    <clipPath id="postBorderClip">
+      <rect x="0" y="0" width="600" height="600" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="750" fill="url(#studioCanvasBg)" />
+  <rect width="1200" height="750" fill="url(#redEnergyAmbient)" />
+  <rect width="1200" height="750" fill="url(#goldEnergyAmbient)" />
+
+  <!-- Studio Grid Accents -->
+  <g opacity="0.12" stroke="#475569" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="50" y1="0" x2="50" y2="750" />
+    <line x1="680" y1="0" x2="680" y2="750" />
+    <line x1="1150" y1="0" x2="1150" y2="750" />
+    <line x1="0" y1="65" x2="1200" y2="65" />
+    <line x1="0" y1="685" x2="1200" y2="685" />
+  </g>
+
+  <!-- ================= TOP CASE STUDY BANNER BAR ================= -->
+  <g transform="translate(50, 18)">
+    <rect x="0" y="0" width="1100" height="38" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1" />
+    <g transform="translate(18, 24)">
+      <circle cx="6" cy="0" r="4" fill="#ea384c" />
+      <text x="20" y="4" fill="#f9fafb" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="800" letter-spacing="1">
+        SOCIAL MEDIA CAMPAIGN SHOWCASE
+      </text>
+      <text x="260" y="4" fill="#4b5563" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">|</text>
+      <text x="278" y="4" fill="#9ca3af" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600">
+        Optimum Fitness • Official Zumba Class Launch Creative (1:1 Feed Post)
+      </text>
+    </g>
+    <g transform="translate(970, 24)">
+      <text x="0" y="4" fill="#ea384c" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+        INSTAGRAM / META
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT / MAIN: EXACT SOCIAL MEDIA CREATIVE (1:1) ================= -->
+  <g transform="translate(50, 72)" filter="url(#creativeDropShadow)">
+    <!-- White / Subtle Border Container -->
+    <rect x="-2" y="-2" width="604" height="604" rx="18" fill="none" stroke="#374151" stroke-width="1.5" />
+    
+    <!-- Cropped Post Container -->
+    <g clip-path="url(#postBorderClip)">
+      <!-- 1. Background Photography: Gym Fitness Studio with Athletic Woman in Dance Pose -->
+      <image href="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&amp;fit=crop&amp;w=800&amp;q=85" x="-10" y="0" width="620" height="600" preserveAspectRatio="xMidYMid slice" />
+
+      <!-- Secondary Dark Studio Shadowing & Mood Lighting -->
+      <rect x="0" y="0" width="600" height="600" fill="url(#photoDarkLeftGrad)" />
+      <rect x="0" y="300" width="600" height="300" fill="url(#photoBottomGrad)" />
+
+      <!-- Atmospheric Gym Warm Glow & Contrast Tuning -->
+      <circle cx="480" cy="180" r="140" fill="#f59e0b" opacity="0.12" />
+
+      <!-- 2. TOP-LEFT: OPTIMUM FITNESS LOGO -->
+      <g transform="translate(26, 26)">
+        <!-- Concentric Swirl / Arc Logo in Coral Red -->
+        <g transform="translate(30, 32)">
+          <!-- Outer Arc -->
+          <path d="M-22 -14 C-10 -26 12 -26 24 -14 C34 -3 32 18 18 28 C8 35 -6 35 -16 28" fill="none" stroke="#ea384c" stroke-width="4.5" stroke-linecap="round" />
+          <!-- Middle Arc -->
+          <path d="M-15 -6 C-7 -15 8 -15 16 -6 C23 2 22 15 12 21 C4 26 -6 26 -12 20" fill="none" stroke="#ea384c" stroke-width="4.5" stroke-linecap="round" />
+          <!-- Center Solid / Dot Core -->
+          <circle cx="0" cy="4" r="5" fill="#ea384c" />
+        </g>
+
+        <!-- Brand Wordmark Typography -->
+        <g transform="translate(70, 26)">
+          <text x="0" y="0" fill="#ffffff" font-family="'Montserrat', 'Arial Black', system-ui, sans-serif" font-size="20" font-weight="900" letter-spacing="1">
+            OPTIMUM
+          </text>
+          <text x="1" y="16" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="5">
+            FITNESS
+          </text>
+        </g>
+      </g>
+
+      <!-- 3. TOP-RIGHT: CORAL RED DOT MATRIX (7 columns x 5 rows) -->
+      <g transform="translate(480, 26)">
+        <g fill="#ea384c">
+          <!-- Row 1 -->
+          <circle cx="0" cy="0" r="3.2" /><circle cx="14" cy="0" r="3.2" /><circle cx="28" cy="0" r="3.2" /><circle cx="42" cy="0" r="3.2" /><circle cx="56" cy="0" r="3.2" /><circle cx="70" cy="0" r="3.2" /><circle cx="84" cy="0" r="3.2" />
+          <!-- Row 2 -->
+          <circle cx="0" cy="11" r="3.2" /><circle cx="14" cy="11" r="3.2" /><circle cx="28" cy="11" r="3.2" /><circle cx="42" cy="11" r="3.2" /><circle cx="56" cy="11" r="3.2" /><circle cx="70" cy="11" r="3.2" /><circle cx="84" cy="11" r="3.2" />
+          <!-- Row 3 -->
+          <circle cx="0" cy="22" r="3.2" /><circle cx="14" cy="22" r="3.2" /><circle cx="28" cy="22" r="3.2" /><circle cx="42" cy="22" r="3.2" /><circle cx="56" cy="22" r="3.2" /><circle cx="70" cy="22" r="3.2" /><circle cx="84" cy="22" r="3.2" />
+          <!-- Row 4 -->
+          <circle cx="0" cy="33" r="3.2" /><circle cx="14" cy="33" r="3.2" /><circle cx="28" cy="33" r="3.2" /><circle cx="42" cy="33" r="3.2" /><circle cx="56" cy="33" r="3.2" /><circle cx="70" cy="33" r="3.2" /><circle cx="84" cy="33" r="3.2" />
+          <!-- Row 5 -->
+          <circle cx="0" cy="44" r="3.2" /><circle cx="14" cy="44" r="3.2" /><circle cx="28" cy="44" r="3.2" /><circle cx="42" cy="44" r="3.2" /><circle cx="56" cy="44" r="3.2" /><circle cx="70" cy="44" r="3.2" /><circle cx="84" cy="44" r="3.2" />
+        </g>
+      </g>
+
+      <!-- 4. HERO HEADLINE: FREE FOR ALL / ZUMBA / CLASS -->
+      <g transform="translate(36, 138)">
+        <!-- "FREE FOR ALL" in slanted/italic bold white with dark outline -->
+        <text x="0" y="0" fill="#ffffff" font-family="'Impact', 'Arial Black', system-ui, sans-serif" font-size="34" font-weight="900" font-style="italic" letter-spacing="1" filter="url(#boldTextGlow)">
+          FREE FOR ALL
+        </text>
+
+        <!-- "ZUMBA" in massive, extra bold white typography -->
+        <text x="0" y="74" fill="#ffffff" font-family="'Impact', 'Arial Black', 'Montserrat', sans-serif" font-size="78" font-weight="900" letter-spacing="-1" filter="url(#boldTextGlow)">
+          ZUMBA
+        </text>
+
+        <!-- "CLASS" in massive, extra bold coral-red typography -->
+        <text x="0" y="152" fill="#ea384c" font-family="'Impact', 'Arial Black', 'Montserrat', sans-serif" font-size="82" font-weight="900" letter-spacing="-1" filter="url(#redTextShadow)">
+          CLASS
+        </text>
+      </g>
+
+      <!-- 5. EVENT DETAILS: DATE & TIME WITH ICONS -->
+      <g transform="translate(36, 332)">
+        <!-- Calendar Icon & Date -->
+        <g transform="translate(0, 0)">
+          <!-- Calendar Icon -->
+          <g stroke="#ffffff" stroke-width="2.5" fill="none">
+            <rect x="0" y="0" width="28" height="26" rx="4" />
+            <line x1="0" y1="9" x2="28" y2="9" />
+            <!-- Binder Rings -->
+            <line x1="6" y1="-3" x2="6" y2="3" stroke-linecap="round" />
+            <line x1="22" y1="-3" x2="22" y2="3" stroke-linecap="round" />
+            <!-- Small Calendar Day Grids -->
+            <circle cx="7" cy="15" r="1.5" fill="#ffffff" stroke="none" />
+            <circle cx="14" cy="15" r="1.5" fill="#ffffff" stroke="none" />
+            <circle cx="21" cy="15" r="1.5" fill="#ffffff" stroke="none" />
+            <circle cx="7" cy="20" r="1.5" fill="#ffffff" stroke="none" />
+            <circle cx="14" cy="20" r="1.5" fill="#ffffff" stroke="none" />
+          </g>
+          <!-- Date Text -->
+          <text x="40" y="20" fill="#ea384c" font-family="'Montserrat', 'Arial Black', system-ui, sans-serif" font-size="24" font-weight="900" letter-spacing="0.5">
+            02 APRIL, 2025
+          </text>
+        </g>
+
+        <!-- Clock Icon & Time -->
+        <g transform="translate(0, 52)">
+          <!-- Clock Icon -->
+          <g stroke="#ffffff" stroke-width="2.5" fill="none">
+            <circle cx="14" cy="14" r="13" />
+            <polyline points="14,6 14,14 19,14" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <!-- Time Text (Two Lines) -->
+          <text x="40" y="14" fill="#ea384c" font-family="'Montserrat', 'Arial Black', system-ui, sans-serif" font-size="21" font-weight="900" letter-spacing="0.5">
+            07:00 AM
+          </text>
+          <text x="40" y="36" fill="#ea384c" font-family="'Montserrat', 'Arial Black', system-ui, sans-serif" font-size="21" font-weight="900" letter-spacing="0.5">
+            09:00 AM
+          </text>
+        </g>
+      </g>
+
+      <!-- 6. CALLOUT: JOIN OUR FUN AND ENERGETIC ZUMBA CLASSES! -->
+      <g transform="translate(36, 464)">
+        <text x="0" y="0" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="16" font-weight="900" letter-spacing="0.8">
+          JOIN OUR FUN AND ENERGETIC
+        </text>
+        <text x="0" y="24" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="17" font-weight="900" letter-spacing="0.8">
+          ZUMBA CLASSES!
+        </text>
+      </g>
+
+      <!-- 7. BOTTOM-RIGHT DOT MATRIX (10 columns x 4 rows) -->
+      <g transform="translate(436, 470)">
+        <g fill="#ea384c">
+          <!-- 4 Rows of 10 Dots -->
+          <circle cx="0" cy="0" r="3" /><circle cx="13" cy="0" r="3" /><circle cx="26" cy="0" r="3" /><circle cx="39" cy="0" r="3" /><circle cx="52" cy="0" r="3" /><circle cx="65" cy="0" r="3" /><circle cx="78" cy="0" r="3" /><circle cx="91" cy="0" r="3" /><circle cx="104" cy="0" r="3" /><circle cx="117" cy="0" r="3" />
+          <circle cx="0" cy="10" r="3" /><circle cx="13" cy="10" r="3" /><circle cx="26" cy="10" r="3" /><circle cx="39" cy="10" r="3" /><circle cx="52" cy="10" r="3" /><circle cx="65" cy="10" r="3" /><circle cx="78" cy="10" r="3" /><circle cx="91" cy="10" r="3" /><circle cx="104" cy="10" r="3" /><circle cx="117" cy="10" r="3" />
+          <circle cx="0" cy="20" r="3" /><circle cx="13" cy="20" r="3" /><circle cx="26" cy="20" r="3" /><circle cx="39" cy="20" r="3" /><circle cx="52" cy="20" r="3" /><circle cx="65" cy="20" r="3" /><circle cx="78" cy="20" r="3" /><circle cx="91" cy="20" r="3" /><circle cx="104" cy="20" r="3" /><circle cx="117" cy="20" r="3" />
+          <circle cx="0" cy="30" r="3" /><circle cx="13" cy="30" r="3" /><circle cx="26" cy="30" r="3" /><circle cx="39" cy="30" r="3" /><circle cx="52" cy="30" r="3" /><circle cx="65" cy="30" r="3" /><circle cx="78" cy="30" r="3" /><circle cx="91" cy="30" r="3" /><circle cx="104" cy="30" r="3" /><circle cx="117" cy="30" r="3" />
+        </g>
+      </g>
+
+      <!-- 8. BOTTOM RED RIBBON / FOOTER STRIP -->
+      <g transform="translate(0, 542)">
+        <!-- Solid Coral-Red Background Bar -->
+        <rect x="0" y="0" width="600" height="58" fill="url(#redStripGrad)" />
+
+        <!-- Line 1: Address with Location Pin -->
+        <g transform="translate(20, 20)">
+          <!-- Location Pin Icon -->
+          <g fill="#ffffff">
+            <path d="M7 0 C3.13 0 0 3.13 0 7 C0 12.25 7 18 7 18 C7 18 14 12.25 14 7 C14 3.13 10.87 0 7 0 Z M7 9.5 C5.62 9.5 4.5 8.38 4.5 7 C4.5 5.62 5.62 4.5 7 4.5 C8.38 4.5 9.5 5.62 9.5 7 C9.5 8.38 8.38 9.5 7 9.5 Z" />
+          </g>
+          <!-- Address Text -->
+          <text x="22" y="13" fill="#ffffff" font-family="'Montserrat', system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="0.2">
+            4TH FLOOR KRISHNA ICON, TOWN HALL RD, ANAND, GUJARAT-388001
+          </text>
+        </g>
+
+        <!-- Line 2: Phone with Phone Icon -->
+        <g transform="translate(160, 43)">
+          <!-- Phone Handset Icon -->
+          <g fill="#ffffff">
+            <path d="M3.62 0.7 C3.2 -0.23 2.1 -0.23 1.63 0.28 L0.4 1.5 C-0.15 2.05 -0.15 3.08 0.45 4.5 C1.46 6.88 3.32 9.74 5.7 11.75 C7.12 12.35 8.15 12.35 8.7 11.8 L9.92 10.57 C10.43 10.1 10.43 9 9.5 8.58 L7.7 7.78 C7.05 7.49 6.27 7.78 5.86 8.39 L5.4 9.07 C3.83 8.14 3.06 6.37 2.13 4.8 L2.81 4.34 C3.42 3.93 3.71 3.15 3.42 2.5 L2.62 0.7 Z" />
+          </g>
+          <!-- Phone Numbers -->
+          <text x="18" y="11" fill="#ffffff" font-family="'Montserrat', system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="800" letter-spacing="0.5">
+            +91-7203098888, +91-7203058888
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: SOCIAL MEDIA CAMPAIGN METADATA & SPECS ================= -->
+  <g transform="translate(685, 72)">
+    <!-- Card 1: Social Media Post Specs & Campaign Card -->
+    <g filter="url(#sideCardShadow)">
+      <rect x="0" y="0" width="465" height="280" rx="16" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+
+      <!-- Card Top Header -->
+      <g transform="translate(24, 24)">
+        <rect x="0" y="0" width="130" height="24" rx="12" fill="#ef4444" opacity="0.15" />
+        <text x="65" y="16" fill="#f87171" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.8" text-anchor="middle">
+          CAMPAIGN ASSET
+        </text>
+        <text x="310" y="17" fill="#6b7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600">
+          DIM: 1080 × 1080 PX
+        </text>
+
+        <!-- Project Title -->
+        <text x="0" y="54" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="20" font-weight="900" letter-spacing="-0.3">
+          Optimum Fitness
+        </text>
+        <text x="0" y="76" fill="#ea384c" font-family="system-ui, sans-serif" font-size="14" font-weight="700">
+          Zumba Launch Creative &amp; Social Campaign
+        </text>
+
+        <!-- Campaign Objective Overview -->
+        <text x="0" y="110" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12.5" font-weight="400" width="400">
+          High-conversion social media campaign designed to drive local
+        </text>
+        <text x="0" y="128" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12.5" font-weight="400">
+          footfall for Optimum Fitness's free Zumba workshop in Anand.
+        </text>
+
+        <!-- Feature List Badges -->
+        <g transform="translate(0, 155)">
+          <g transform="translate(0, 0)">
+            <circle cx="8" cy="8" r="4" fill="#ea384c" />
+            <text x="20" y="12" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Event Information Architecture &amp; Schedule Timing</text>
+          </g>
+          <g transform="translate(0, 28)">
+            <circle cx="8" cy="8" r="4" fill="#ea384c" />
+            <text x="20" y="12" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Dynamic Zumba Energy &amp; Bold Gym Typography</text>
+          </g>
+          <g transform="translate(0, 56)">
+            <circle cx="8" cy="8" r="4" fill="#ea384c" />
+            <text x="20" y="12" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Direct Contact &amp; Geographic Location Callouts</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Brand Color Palette & Design Breakdown -->
+    <g transform="translate(0, 305)" filter="url(#sideCardShadow)">
+      <rect x="0" y="0" width="465" height="295" rx="16" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+
+      <g transform="translate(24, 24)">
+        <text x="0" y="12" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="0.5">
+          CAMPAIGN DESIGN PILLARS
+        </text>
+
+        <!-- 3 Highlights / Feature Boxes -->
+        <g transform="translate(0, 28)">
+          <!-- Pillar 1 -->
+          <rect x="0" y="0" width="130" height="66" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+          <text x="65" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Campaign</text>
+          <text x="65" y="44" fill="#ea384c" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Creatives</text>
+
+          <!-- Pillar 2 -->
+          <rect x="143" y="0" width="130" height="66" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+          <text x="208" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Promotional</text>
+          <text x="208" y="44" fill="#ea384c" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Graphics</text>
+
+          <!-- Pillar 3 -->
+          <rect x="286" y="0" width="130" height="66" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1" />
+          <text x="351" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Fitness</text>
+          <text x="351" y="44" fill="#ea384c" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Branding</text>
+        </g>
+
+        <!-- Color Swatches -->
+        <g transform="translate(0, 120)">
+          <text x="0" y="10" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">
+            BRAND COLOR SPECIFICATION
+          </text>
+          
+          <g transform="translate(0, 24)">
+            <!-- Swatch 1: Energetic Red -->
+            <rect x="0" y="0" width="22" height="22" rx="6" fill="#ea384c" stroke="#ffffff" stroke-width="1" />
+            <text x="30" y="15" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#EA384C Energetic Red</text>
+
+            <!-- Swatch 2: Pure White -->
+            <rect x="200" y="0" width="22" height="22" rx="6" fill="#ffffff" />
+            <text x="230" y="15" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#FFFFFF Display White</text>
+          </g>
+
+          <g transform="translate(0, 58)">
+            <!-- Swatch 3: Studio Charcoal -->
+            <rect x="0" y="0" width="22" height="22" rx="6" fill="#0b0f17" stroke="#374151" stroke-width="1" />
+            <text x="30" y="15" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#0B0F17 Studio Black</text>
+
+            <!-- Swatch 4: Solar Accent -->
+            <rect x="200" y="0" width="22" height="22" rx="6" fill="#facc15" />
+            <text x="230" y="15" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#FACC15 Solar Activewear</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM EMBEDDED SUMMARY BAR ================= -->
+  <g transform="translate(50, 696)">
+    <rect x="0" y="0" width="1100" height="38" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1" />
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">
+        CASE STUDY SCOPE
+      </text>
+      <text x="135" y="0" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">
+        Social Media Marketing • Event Promotional Post • Fitness Brand Identity System • Campaign Creative Direction
+      </text>
+    </g>
+    <g transform="translate(965, 24)">
+      <text x="0" y="0" fill="#ea384c" font-family="system-ui, sans-serif" font-size="11" font-weight="800">
+        RUDRAKSHA INFOTEK
+      </text>
+    </g>
+  </g>
+</svg>

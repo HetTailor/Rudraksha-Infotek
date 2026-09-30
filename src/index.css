@@ -1,0 +1,794 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-indigo: #3C2B99;
+    --brand-gold: #D4B26B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #18181b;
+    background-color: #fafafa;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    letter-spacing: -0.03em;
+  }
+}
+
+/* =========================================================================
+   Universal Secondary / Outline Button Color System
+   Normal state: Background #D9D9D9, Border #D9D9D9, Text #3C2B99, Icon #3C2B99
+   Hover state:  Background #3C2B99, Border #3C2B99, Text #D9D9D9, Icon #D9D9D9
+   Smooth 250ms transition
+   ========================================================================= */
+
+.btn-secondary-lightgrey,
+.btn-secondary,
+.btn-outline,
+#hero-explore-services-btn,
+a#hero-explore-services-btn {
+  background-color: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+  color: #3C2B99 !important;
+  transition: background-color 250ms ease-out, border-color 250ms ease-out, color 250ms ease-out, transform 250ms ease-out, box-shadow 250ms ease-out !important;
+}
+
+.btn-secondary-lightgrey span,
+.btn-secondary span,
+.btn-outline span,
+.btn-secondary-lightgrey strong,
+.btn-secondary strong,
+.btn-outline strong,
+#hero-explore-services-btn span {
+  color: #3C2B99 !important;
+  transition: color 250ms ease-out !important;
+}
+
+.btn-secondary-lightgrey svg,
+.btn-secondary-lightgrey lucide,
+.btn-secondary svg,
+.btn-outline svg,
+#hero-explore-services-btn svg {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+  transition: color 250ms ease-out, stroke 250ms ease-out, transform 250ms ease-out !important;
+}
+
+.btn-secondary-lightgrey:hover,
+.btn-secondary-lightgrey:hover:not(:disabled),
+.btn-secondary:hover,
+.btn-outline:hover,
+#hero-explore-services-btn:hover,
+a#hero-explore-services-btn:hover {
+  background-color: #D4B26B !important;
+  border-color: #D4B26B !important;
+  color: #3C2B99 !important;
+}
+
+.btn-secondary-lightgrey:hover span,
+.btn-secondary:hover span,
+.btn-outline:hover span,
+.btn-secondary-lightgrey:hover strong,
+.btn-secondary:hover strong,
+.btn-outline:hover strong,
+#hero-explore-services-btn:hover span {
+  color: #3C2B99 !important;
+}
+
+.btn-secondary-lightgrey:hover svg,
+.btn-secondary-lightgrey:hover lucide,
+.btn-secondary:hover svg,
+.btn-outline:hover svg,
+#hero-explore-services-btn:hover svg {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+}
+
+/* Fallback protection: Catch any white secondary/outline buttons across any page */
+button.border.bg-white:not([class*="bg-[#3C2B99]"]),
+a.border.bg-white:not([class*="bg-[#3C2B99]"]) {
+  background-color: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+  color: #3C2B99 !important;
+  transition: background-color 250ms ease-out, border-color 250ms ease-out, color 250ms ease-out !important;
+}
+
+button.border.bg-white:not([class*="bg-[#3C2B99]"]):hover,
+a.border.bg-white:not([class*="bg-[#3C2B99]"]):not(#contact-touchpoint-email):not(#contact-touchpoint-whatsapp):hover {
+  background-color: #D4B26B !important;
+  border-color: #D4B26B !important;
+  color: #3C2B99 !important;
+}
+
+/* =========================================================================
+   WHITE Buttons Placed on INDIGO Backgrounds
+   Normal State:
+     Background: WHITE #FFFFFF
+     Border:     WHITE #FFFFFF (or subtle matching)
+     Text:       #3C2B99
+     Arrow/Icon: #3C2B99
+   Hover State:
+     Background: #D4B26B
+     Border:     #D4B26B
+     Text:       #3C2B99
+     Arrow/Icon: #3C2B99
+   Mouse Leaves:
+     Returns smoothly to #FFFFFF in 200-300ms
+   ========================================================================= */
+
+.btn-white-on-indigo,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo,
+[class*="bg-[#231955]"] .btn-white-on-indigo,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey,
+[class*="bg-[#3C2B99]"] .btn-secondary,
+[class*="bg-[#3C2B99]"] .btn-outline,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"],
+[class*="bg-[#3C2B99]"] button[class*="bg-white"],
+[class*="bg-[#231955]"] a[class*="bg-white"],
+[class*="bg-[#3C2B99]"] a.border:not([class*="bg-[#3C2B99]"]):not([class*="bg-[#25D366]"]):not([class*="bg-[#D4B26B]"]):not([class*="bg-[#D9D9D9]"]):not([class*="bg-transparent"]),
+[class*="bg-[#3C2B99]"] button.border:not([class*="bg-[#3C2B99]"]):not([class*="bg-[#25D366]"]):not([class*="bg-[#D4B26B]"]):not([class*="bg-[#D9D9D9]"]):not([class*="bg-transparent"]),
+[class*="bg-[#3C2B99]"] a#results-case-studies-btn,
+[class*="bg-[#3C2B99]"] a#about-speak-het-tailor-btn,
+[class*="bg-[#3C2B99]"] a#process-discovery-cta-btn,
+[class*="bg-[#3C2B99]"] a#portfolio-cta-discuss-btn,
+[class*="bg-[#231955]"] a#split-cta-proposal-btn,
+#results-case-studies-btn,
+#about-speak-het-tailor-btn,
+#process-discovery-cta-btn,
+#portfolio-cta-discuss-btn,
+#split-cta-proposal-btn {
+  background-color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: #3C2B99 !important;
+  transition: background-color 250ms ease-out, border-color 250ms ease-out, color 250ms ease-out, transform 250ms ease-out, box-shadow 250ms ease-out !important;
+}
+
+.btn-white-on-indigo *,
+.btn-white-on-indigo span,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo *,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo span,
+[class*="bg-[#231955]"] .btn-white-on-indigo *,
+[class*="bg-[#231955]"] .btn-white-on-indigo span,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey *,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey span,
+[class*="bg-[#3C2B99]"] .btn-secondary *,
+[class*="bg-[#3C2B99]"] .btn-secondary span,
+[class*="bg-[#3C2B99]"] .btn-outline *,
+[class*="bg-[#3C2B99]"] .btn-outline span,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"] *,
+[class*="bg-[#3C2B99]"] button[class*="bg-white"] *,
+[class*="bg-[#231955]"] a[class*="bg-white"] *,
+#results-case-studies-btn *,
+#results-case-studies-btn span,
+#about-speak-het-tailor-btn *,
+#about-speak-het-tailor-btn span,
+#process-discovery-cta-btn *,
+#process-discovery-cta-btn span,
+#portfolio-cta-discuss-btn *,
+#portfolio-cta-discuss-btn span,
+#split-cta-proposal-btn *,
+#split-cta-proposal-btn span {
+  color: #3C2B99 !important;
+  transition: color 250ms ease-out !important;
+}
+
+.btn-white-on-indigo svg,
+.btn-white-on-indigo svg *,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo svg,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo svg *,
+[class*="bg-[#231955]"] .btn-white-on-indigo svg,
+[class*="bg-[#231955]"] .btn-white-on-indigo svg *,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey svg,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey svg *,
+[class*="bg-[#3C2B99]"] .btn-secondary svg,
+[class*="bg-[#3C2B99]"] .btn-secondary svg *,
+[class*="bg-[#3C2B99]"] .btn-outline svg,
+[class*="bg-[#3C2B99]"] .btn-outline svg *,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"] svg,
+[class*="bg-[#3C2B99]"] button[class*="bg-white"] svg,
+[class*="bg-[#231955]"] a[class*="bg-white"] svg,
+#results-case-studies-btn svg,
+#about-speak-het-tailor-btn svg,
+#process-discovery-cta-btn svg,
+#portfolio-cta-discuss-btn svg,
+#split-cta-proposal-btn svg {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+  transition: color 250ms ease-out, stroke 250ms ease-out, transform 250ms ease-out !important;
+}
+
+/* Hover State for White Buttons on Indigo Backgrounds */
+.btn-white-on-indigo:hover,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo:hover,
+[class*="bg-[#231955]"] .btn-white-on-indigo:hover,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey:hover,
+[class*="bg-[#3C2B99]"] .btn-secondary:hover,
+[class*="bg-[#3C2B99]"] .btn-outline:hover,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"]:hover,
+[class*="bg-[#3C2B99]"] button[class*="bg-white"]:hover,
+[class*="bg-[#231955]"] a[class*="bg-white"]:hover,
+[class*="bg-[#3C2B99]"] a.border:not([class*="bg-[#3C2B99]"]):not([class*="bg-[#25D366]"]):not([class*="bg-[#D4B26B]"]):not([class*="bg-[#D9D9D9]"]):not([class*="bg-transparent"]):not(#contact-touchpoint-email):not(#contact-touchpoint-whatsapp):hover,
+[class*="bg-[#3C2B99]"] button.border:not([class*="bg-[#3C2B99]"]):not([class*="bg-[#25D366]"]):not([class*="bg-[#D4B26B]"]):not([class*="bg-[#D9D9D9]"]):not([class*="bg-transparent"]):hover,
+[class*="bg-[#3C2B99]"] a#results-case-studies-btn:hover,
+[class*="bg-[#3C2B99]"] a#about-speak-het-tailor-btn:hover,
+[class*="bg-[#3C2B99]"] a#process-discovery-cta-btn:hover,
+[class*="bg-[#3C2B99]"] a#portfolio-cta-discuss-btn:hover,
+[class*="bg-[#231955]"] a#split-cta-proposal-btn:hover,
+#results-case-studies-btn:hover,
+#about-speak-het-tailor-btn:hover,
+#process-discovery-cta-btn:hover,
+#portfolio-cta-discuss-btn:hover,
+#split-cta-proposal-btn:hover {
+  background-color: #D4B26B !important;
+  border-color: #D4B26B !important;
+  color: #3C2B99 !important;
+}
+
+.btn-white-on-indigo:hover *,
+.btn-white-on-indigo:hover span,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo:hover *,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo:hover span,
+[class*="bg-[#231955]"] .btn-white-on-indigo:hover *,
+[class*="bg-[#231955]"] .btn-white-on-indigo:hover span,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey:hover *,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey:hover span,
+[class*="bg-[#3C2B99]"] .btn-secondary:hover *,
+[class*="bg-[#3C2B99]"] .btn-secondary:hover span,
+[class*="bg-[#3C2B99]"] .btn-outline:hover *,
+[class*="bg-[#3C2B99]"] .btn-outline:hover span,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"]:hover *,
+[class*="bg-[#3C2B99]"] button[class*="bg-white"]:hover *,
+[class*="bg-[#231955]"] a[class*="bg-white"]:hover *,
+#results-case-studies-btn:hover *,
+#results-case-studies-btn:hover span,
+#about-speak-het-tailor-btn:hover *,
+#about-speak-het-tailor-btn:hover span,
+#process-discovery-cta-btn:hover *,
+#process-discovery-cta-btn:hover span,
+#portfolio-cta-discuss-btn:hover *,
+#portfolio-cta-discuss-btn:hover span,
+#split-cta-proposal-btn:hover *,
+#split-cta-proposal-btn:hover span {
+  color: #3C2B99 !important;
+}
+
+.btn-white-on-indigo:hover svg,
+.btn-white-on-indigo:hover svg *,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo:hover svg,
+[class*="bg-[#3C2B99]"] .btn-white-on-indigo:hover svg *,
+[class*="bg-[#231955]"] .btn-white-on-indigo:hover svg,
+[class*="bg-[#231955]"] .btn-white-on-indigo:hover svg *,
+[class*="bg-[#3C2B99]"] .btn-secondary-lightgrey:hover svg,
+[class*="bg-[#3C2B99]"] .btn-secondary:hover svg,
+[class*="bg-[#3C2B99]"] .btn-outline:hover svg,
+[class*="bg-[#3C2B99]"] a[class*="bg-white"]:hover svg,
+[class*="bg-[#3C2B99]"] button[class*="bg-white"]:hover svg,
+[class*="bg-[#231955]"] a[class*="bg-white"]:hover svg,
+#results-case-studies-btn:hover svg,
+#about-speak-het-tailor-btn:hover svg,
+#process-discovery-cta-btn:hover svg,
+#portfolio-cta-discuss-btn:hover svg,
+#split-cta-proposal-btn:hover svg {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+}
+
+/* Custom smooth scroll and subtle glass styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4B26B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b59247;
+}
+
+/* =========================================================================
+   Project / Case-Study Images Hover Effect:
+   Zero color overlay, zero tint, zero brightness change, zero color filter.
+   Original image remains 100% untouched on mouse hover.
+   ========================================================================= */
+[id^="portfolio-card-"] .absolute.inset-0.z-20 {
+  background-color: transparent !important;
+}
+
+[id^="portfolio-card-"] img,
+.group:hover [id^="portfolio-card-"] img {
+  filter: none !important;
+}
+
+/* =========================================================================
+   Universal Image Anti-Zoom / Anti-Scale Policy:
+   Zero zoom, zero scale, zero enlarge, zero motion on hover across the entire website.
+   Images remain exactly the same size and position on hover as in normal state.
+   ========================================================================= */
+img:hover,
+.group:hover img,
+*:hover > img,
+[class*="group"]:hover img,
+a:hover img,
+button:hover img,
+div:hover > img {
+  zoom: 1;
+}
+
+img[class*="hover:scale"]:hover,
+.group:hover img[class*="group-hover:scale"],
+img.hover\:scale-\[1\.02\]:hover,
+img.hover\:scale-\[1\.03\]:hover,
+img.group-hover\:scale-105:hover,
+.group:hover img.group-hover\:scale-105,
+.group:hover img.group-hover\:scale-110,
+.group:hover img.group-hover\:scale-\[1\.03\],
+.group:hover img.group-hover\:scale-\[1\.25\],
+.group:hover img.group-hover\:scale-\[1\.27\] {
+  transform: none !important;
+}
+
+/* =========================================================================
+   Brand Logo:
+   Zero zoom, zero scale, zero enlarge, zero lightbox on click/hover.
+   Logo remains completely static in size and appearance.
+   ========================================================================= */
+#brand-logo-link,
+#brand-logo-link img,
+a#brand-logo-link:hover img,
+a#brand-logo-link:active img,
+a#brand-logo-link:focus img {
+  transform: none !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+/* =========================================================================
+   Service Action Buttons Hover Behavior:
+   - "Create My Design"
+   - "Grow My Brand"
+   - "Build My Website"
+   Normal state: keep current design exactly as it is
+   On mouse hover: background #D9D9D9, border #D9D9D9, text #3C2B99, icon #3C2B99
+   When mouse leaves: return smoothly to original normal state in 250ms
+   ========================================================================= */
+#page-cta-website,
+#page-cta-social,
+#page-cta-graphic,
+#cta-website,
+#cta-social,
+#cta-graphic,
+.service-action-cta-btn {
+  transition: background-color 250ms ease-out, border-color 250ms ease-out, color 250ms ease-out, box-shadow 250ms ease-out, transform 250ms ease-out !important;
+}
+
+#page-cta-website:hover,
+#page-cta-social:hover,
+#page-cta-graphic:hover,
+#cta-website:hover,
+#cta-social:hover,
+#cta-graphic:hover,
+.service-action-cta-btn:hover {
+  background-color: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+  color: #3C2B99 !important;
+}
+
+#page-cta-website:hover *,
+#page-cta-website:hover span,
+#page-cta-social:hover *,
+#page-cta-social:hover span,
+#page-cta-graphic:hover *,
+#page-cta-graphic:hover span,
+#cta-website:hover *,
+#cta-website:hover span,
+#cta-social:hover *,
+#cta-social:hover span,
+#cta-graphic:hover *,
+#cta-graphic:hover span,
+.service-action-cta-btn:hover *,
+.service-action-cta-btn:hover span {
+  color: #3C2B99 !important;
+}
+
+#page-cta-website:hover svg,
+#page-cta-website:hover svg *,
+#page-cta-social:hover svg,
+#page-cta-social:hover svg *,
+#page-cta-graphic:hover svg,
+#page-cta-graphic:hover svg *,
+#cta-website:hover svg,
+#cta-website:hover svg *,
+#cta-social:hover svg,
+#cta-social:hover svg *,
+#cta-graphic:hover svg,
+#cta-graphic:hover svg *,
+.service-action-cta-btn:hover svg,
+.service-action-cta-btn:hover svg * {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+}
+
+/* =========================================================================
+   "Trusted by leading brands" Infinite Marquee Animation
+   Continuous smooth right-to-left linear scroll with seamless loop.
+   Runs on the compositor thread completely independent of page scrolling.
+   ========================================================================= */
+@keyframes brand-marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-brand-marquee {
+  display: flex;
+  width: max-content;
+  animation: brand-marquee-scroll 22s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.brand-marquee-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+}
+
+/* =========================================================================
+   Focus Frame Traveling Border Beam
+   ========================================================================= */
+@keyframes border-dash-flow {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -520;
+  }
+}
+
+.animate-border-dash {
+  animation: border-dash-flow 3.5s linear infinite;
+}
+
+/* =========================================================================
+   Seamless Border & Line Animations (Normalized pathLength="100")
+   Guarantees:
+   - No line disappears
+   - No duplicate line appears
+   - No visible restart
+   - No jump
+   - No flicker
+   - No gap
+   - No animation reset when moving mouse
+   ========================================================================= */
+@keyframes seamless-border-flow {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-seamless-border {
+  animation: seamless-border-flow 4s linear infinite;
+}
+
+/* Continuous Square Border Path (Clockwise: Top -> Right -> Bottom -> Left -> Top) */
+@keyframes square-border-clockwise {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.animate-square-border-clockwise {
+  animation: square-border-clockwise 4.5s linear infinite;
+}
+
+@keyframes seamless-line-flow {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-seamless-line {
+  animation: seamless-line-flow 3.5s linear infinite;
+}
+
+@keyframes seamless-line-reverse-flow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.animate-seamless-line-reverse {
+  animation: seamless-line-reverse-flow 3.5s linear infinite;
+}
+
+/* =========================================================================
+   "Request a Quote" Button Hover Effect:
+   - Normal background: Indigo #3C2B99
+   - Normal text/icon: White #FFFFFF
+   - On mouse hover:
+     * Background: Light Grey #D9D9D9
+     * Border: Light Grey #D9D9D9
+     * Text / Icon: Indigo #3C2B99
+   - Smooth 250ms transition
+   - On mouse leave: returns to Indigo #3C2B99 and White #FFFFFF
+   ========================================================================= */
+#nav-request-quote-btn,
+#mobile-request-quote-btn,
+#contact-submit-btn,
+.btn-request-quote,
+a.btn-request-quote,
+button.btn-request-quote {
+  background-color: #3C2B99 !important;
+  color: #FFFFFF !important;
+  transition: background-color 250ms ease-out, border-color 250ms ease-out, color 250ms ease-out, box-shadow 250ms ease-out, transform 250ms ease-out !important;
+}
+
+#nav-request-quote-btn *,
+#nav-request-quote-btn span,
+#mobile-request-quote-btn *,
+#mobile-request-quote-btn span,
+#contact-submit-btn *,
+#contact-submit-btn span,
+.btn-request-quote *,
+.btn-request-quote span {
+  color: #FFFFFF !important;
+  transition: color 250ms ease-out !important;
+}
+
+#nav-request-quote-btn svg,
+#nav-request-quote-btn svg *,
+#mobile-request-quote-btn svg,
+#mobile-request-quote-btn svg *,
+#contact-submit-btn svg,
+#contact-submit-btn svg *,
+.btn-request-quote svg,
+.btn-request-quote svg * {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+  transition: color 250ms ease-out, stroke 250ms ease-out, transform 250ms ease-out !important;
+}
+
+#nav-request-quote-btn:hover,
+#mobile-request-quote-btn:hover,
+#contact-submit-btn:hover:not(:disabled),
+.btn-request-quote:hover,
+a.btn-request-quote:hover,
+button.btn-request-quote:hover:not(:disabled) {
+  background-color: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+  color: #3C2B99 !important;
+}
+
+#nav-request-quote-btn:hover *,
+#nav-request-quote-btn:hover span,
+#mobile-request-quote-btn:hover *,
+#mobile-request-quote-btn:hover span,
+#contact-submit-btn:hover:not(:disabled) *,
+#contact-submit-btn:hover:not(:disabled) span,
+.btn-request-quote:hover *,
+.btn-request-quote:hover span {
+  color: #3C2B99 !important;
+}
+
+#nav-request-quote-btn:hover svg,
+#nav-request-quote-btn:hover svg *,
+#mobile-request-quote-btn:hover svg,
+#mobile-request-quote-btn:hover svg *,
+#contact-submit-btn:hover:not(:disabled) svg,
+#contact-submit-btn:hover:not(:disabled) svg *,
+.btn-request-quote:hover svg,
+.btn-request-quote:hover svg * {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+}
+
+/* =========================================================================
+   Contact Page Premium Custom Interactive Utilities
+   ========================================================================= */
+@keyframes contact-telemetry-travel {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(1100%);
+  }
+}
+
+.animate-contact-telemetry {
+  animation: contact-telemetry-travel 14s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes form-initial-activation {
+  0% {
+    border-color: #e4e4e7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  }
+  35% {
+    border-color: #3C2B99;
+    box-shadow: 0 0 0 2px rgba(60, 43, 153, 0.16), 0 8px 24px -4px rgba(60, 43, 153, 0.1);
+  }
+  65% {
+    border-color: #D4B26B;
+    box-shadow: 0 0 0 1px rgba(212, 178, 107, 0.25);
+  }
+  100% {
+    border-color: #e4e4e7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+.animate-form-entry {
+  animation: form-initial-activation 1.4s ease-out 0.4s 1 forwards;
+}
+
+@keyframes field-beam-travel {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.animate-field-beam {
+  animation: field-beam-travel 3.2s linear infinite;
+}
+
+@keyframes lightfield-indigo-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(40px, -30px, 0);
+  }
+}
+
+.animate-lightfield-indigo {
+  animation: lightfield-indigo-drift 24s ease-in-out infinite;
+}
+
+@keyframes lightfield-gold-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-35px, 35px, 0);
+  }
+}
+
+.animate-lightfield-gold {
+  animation: lightfield-gold-drift 28s ease-in-out infinite;
+}
+
+#contact-submit-btn {
+  transform: translateY(0);
+  transition: transform 250ms ease-out, background-color 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out !important;
+}
+
+#contact-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 24px -4px rgba(60, 43, 153, 0.22) !important;
+}
+
+/* =========================================================================
+   Contact Touchpoints: EMAIL and WHATSAPP / DIRECT
+   Strict Zero-Hover Policy: 100% static, no hover animation, no color change,
+   no border change, no shadow change, no lift, no scale, no glow, no movement.
+   ========================================================================= */
+#contact-touchpoint-email,
+#contact-touchpoint-email:hover,
+#contact-touchpoint-email:focus,
+#contact-touchpoint-email:active,
+#contact-touchpoint-whatsapp,
+#contact-touchpoint-whatsapp:hover,
+#contact-touchpoint-whatsapp:focus,
+#contact-touchpoint-whatsapp:active {
+  background-color: rgba(244, 244, 245, 0.6) !important;
+  border-color: rgba(228, 228, 231, 0.7) !important;
+  color: #3f3f46 !important;
+  transform: none !important;
+  scale: 1 !important;
+  box-shadow: none !important;
+  transition: none !important;
+  filter: none !important;
+}
+
+#contact-touchpoint-email *,
+#contact-touchpoint-email:hover *,
+#contact-touchpoint-whatsapp *,
+#contact-touchpoint-whatsapp:hover * {
+  transform: none !important;
+  scale: 1 !important;
+  transition: none !important;
+  filter: none !important;
+}
+
+#contact-touchpoint-email .contact-icon-box,
+#contact-touchpoint-email:hover .contact-icon-box,
+#contact-touchpoint-whatsapp .contact-icon-box,
+#contact-touchpoint-whatsapp:hover .contact-icon-box {
+  background-color: rgba(60, 43, 153, 0.1) !important;
+  border-color: rgba(212, 178, 107, 0.3) !important;
+  color: #3C2B99 !important;
+}
+
+#contact-touchpoint-email .contact-icon-box svg,
+#contact-touchpoint-email:hover .contact-icon-box svg,
+#contact-touchpoint-whatsapp .contact-icon-box svg,
+#contact-touchpoint-whatsapp:hover .contact-icon-box svg {
+  color: #3C2B99 !important;
+  stroke: #3C2B99 !important;
+}
+
+#contact-touchpoint-email .contact-label,
+#contact-touchpoint-email:hover .contact-label,
+#contact-touchpoint-whatsapp .contact-label,
+#contact-touchpoint-whatsapp:hover .contact-label {
+  color: #a1a1aa !important;
+}
+
+#contact-touchpoint-email .contact-value,
+#contact-touchpoint-email:hover .contact-value,
+#contact-touchpoint-whatsapp .contact-value,
+#contact-touchpoint-whatsapp:hover .contact-value {
+  color: #09090b !important;
+}
+
+/* =========================================================================
+   Accessible Reduced Motion Support
+   When prefers-reduced-motion: reduce is requested:
+   - Sets transitions and animations to instantaneous
+   - Preserves 100% opacity and accessibility on all content
+   - Removes mask/clip restraints so content is immediately readable
+   ========================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [style*="clip-path"],
+  [style*="mask-image"],
+  [style*="-webkit-mask-image"] {
+    clip-path: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
+}
+
+

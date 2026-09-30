@@ -1,0 +1,397 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <radialGradient id="navyAmbient" cx="15%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orangeAmbient" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Logo Gradients -->
+    <linearGradient id="leftPage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="leftPage2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="leftPage3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="rightPageDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="50%" stop-color="#162b47" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="rightPageStripe2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <linearGradient id="tuitionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="60%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+
+    <linearGradient id="pencilStrokeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+
+    <linearGradient id="postHeaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softCardShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.10" />
+    </filter>
+    <filter id="elevatedShadow" x="-15%" y="-15%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#0f172a" flood-opacity="0.14" />
+    </filter>
+    <filter id="glowFilament" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="750" fill="url(#studioBg)" />
+  <rect width="1200" height="750" fill="url(#navyAmbient)" />
+  <rect width="1200" height="750" fill="url(#orangeAmbient)" />
+
+  <!-- Studio Grid Lines (Subtle Identity System Layout) -->
+  <g opacity="0.3" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="60" y1="0" x2="60" y2="750" />
+    <line x1="570" y1="0" x2="570" y2="750" />
+    <line x1="1140" y1="0" x2="1140" y2="750" />
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="670" x2="1200" y2="670" />
+  </g>
+
+  <!-- ================= TOP CASE STUDY BANNER BAR ================= -->
+  <g transform="translate(60, 24)">
+    <rect x="0" y="0" width="1080" height="42" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <g transform="translate(18, 25)">
+      <circle cx="8" cy="0" r="4" fill="#ea580c" />
+      <text x="22" y="4" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1">
+        BRAND IDENTITY SHOWCASE
+      </text>
+      <text x="230" y="4" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">|</text>
+      <text x="250" y="4" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
+        Deep Tuition Class • Educational Brand Collateral &amp; Visual Design System
+      </text>
+    </g>
+    <g transform="translate(940, 25)">
+      <text x="0" y="4" fill="#ea580c" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">
+        OFFICIAL IDENTITY
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT HERO: BRAND IDENTITY BOARD ================= -->
+  <g transform="translate(60, 90)">
+    <!-- Master White Presentation Slab -->
+    <rect x="0" y="0" width="490" height="560" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#softCardShadow)" />
+
+    <!-- Card Top Header -->
+    <g transform="translate(32, 38)">
+      <rect x="0" y="0" width="140" height="26" rx="13" fill="#fff7ed" stroke="#fed7aa" stroke-width="1" />
+      <text x="70" y="17" fill="#c2410c" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.8" text-anchor="middle">
+        PRIMARY LOGO UNIT
+      </text>
+      <text x="360" y="18" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">
+        SPEC: CMYK &amp; RGB
+      </text>
+    </g>
+
+    <!-- Center Stage Logo Rendering -->
+    <g transform="translate(245, 230)">
+      <!-- BOOK EMBLEM -->
+      <g transform="translate(0, -65)">
+        <!-- Left Book Outer Backing -->
+        <path d="M-5 130 C-35 125 -105 105 -145 110 C-155 112 -160 105 -160 95 L-160 -45 C-160 -55 -152 -58 -142 -55 C-105 -45 -35 -20 -5 10 Z" fill="#16233b" />
+        
+        <!-- Right Book Outer Backing -->
+        <path d="M5 130 C35 125 105 105 145 110 C155 112 160 105 160 95 L160 -45 C160 -55 152 -58 142 -55 C105 -45 35 -20 5 10 Z" fill="#16233b" />
+
+        <!-- Left Page Colored Layers -->
+        <!-- Layer 1 (Outer Deep Orange/Red) -->
+        <path d="M-12 118 C-42 112 -100 95 -136 98 L-136 -38 C-100 -32 -42 -10 -12 18 Z" fill="url(#leftPage1)" />
+        
+        <!-- Layer 2 (Middle Bright Orange) -->
+        <path d="M-12 118 C-35 113 -75 100 -105 102 L-105 -34 C-75 -28 -35 -8 -12 18 Z" fill="url(#leftPage2)" />
+
+        <!-- Layer 3 (Inner Golden Amber/Yellow) -->
+        <path d="M-12 118 C-25 114 -50 106 -72 108 L-72 -28 C-50 -22 -25 -5 -12 18 Z" fill="url(#leftPage3)" />
+
+        <!-- Right Page Dark Layers & Navy Depth -->
+        <path d="M12 118 C42 112 100 95 136 98 L136 -38 C100 -32 42 -10 12 18 Z" fill="url(#rightPageDark)" />
+
+        <!-- Accent Navy Striping on Right -->
+        <path d="M72 108 C50 106 25 114 12 118 L12 18 C25 -5 50 -22 72 -28 Z" fill="#162b47" />
+        <path d="M105 102 C85 100 45 110 25 115 L25 24 C45 0 85 -18 105 -25 Z" fill="#0f172a" opacity="0.4" />
+
+        <!-- PENCIL INTEGRATION (Right Half) -->
+        <!-- Pencil Bottom Tip (Orange Lead at Spine Vertex) -->
+        <polygon points="0,135 -7,120 7,120" fill="#ea580c" />
+        <!-- Pencil Collar (White band) -->
+        <polygon points="-7,120 7,120 10,110 -10,110" fill="#ffffff" />
+
+        <!-- Curving White Pencil Body -->
+        <path d="M-8 108 C15 70 85 55 105 -50 L125 -50 C105 65 30 85 8 108 Z" fill="#ffffff" />
+
+        <!-- Inner Orange Flow Line -->
+        <path d="M0 106 C20 72 85 60 110 -40 L118 -40 C95 55 32 68 8 106 Z" fill="url(#pencilStrokeGrad)" />
+
+        <!-- Pencil Eraser / Top -->
+        <rect x="105" y="-62" width="20" height="12" rx="3" fill="#ffffff" />
+
+        <!-- Bottom Page White Rim Borders -->
+        <path d="M-150 100 C-110 95 -40 115 -5 130" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" />
+        <path d="M150 100 C110 95 40 115 5 130" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" />
+        <!-- Top Edge White Rims -->
+        <path d="M-148 -46 C-110 -38 -40 -15 -5 14" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" />
+        <path d="M148 -46 C110 -38 40 -15 5 14" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" />
+
+        <!-- CENTER LIGHTBULB (Idea & Learning Spark) -->
+        <g transform="translate(0, -10)">
+          <!-- Glow Behind Bulb -->
+          <circle cx="0" cy="0" r="38" fill="#ffffff" opacity="0.95" />
+          
+          <!-- Outer Glass Contour -->
+          <path d="M0 -42 C24 -42 40 -22 36 6 C33 24 20 32 16 42 L-16 42 C-20 32 -33 24 -36 6 C-40 -22 -24 -42 0 -42 Z" fill="#ffffff" stroke="#16233b" stroke-width="3.5" />
+
+          <!-- Orange Glowing Crown/Filament inside -->
+          <path d="M-16 -5 C-12 -22 -4 -28 0 -14 C4 -28 12 -22 16 -5 L10 16 L-10 16 Z" fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="0" cy="-14" r="2.5" fill="#f59e0b" />
+
+          <!-- Filament Legs -->
+          <line x1="-8" y1="16" x2="-8" y2="40" stroke="#16233b" stroke-width="2" />
+          <line x1="8" y1="16" x2="8" y2="40" stroke="#16233b" stroke-width="2" />
+
+          <!-- Bulb Threaded Base Rings -->
+          <rect x="-14" y="44" width="28" height="6" rx="3" fill="#ffffff" stroke="#16233b" stroke-width="2" />
+          <rect x="-11" y="52" width="22" height="5" rx="2.5" fill="#ffffff" stroke="#16233b" stroke-width="2" />
+          <path d="M-6 58 L6 58 L0 64 Z" fill="#16233b" />
+        </g>
+      </g>
+
+      <!-- LOGO TYPOGRAPHY -->
+      <!-- Line 1: DEEP (Navy) & TUITION (Orange Gradient) -->
+      <g transform="translate(0, 148)" text-anchor="middle">
+        <text font-family="'Montserrat', system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" letter-spacing="1">
+          <tspan x="-90" fill="#16233b">DEEP</tspan>
+          <tspan x="78" fill="url(#tuitionGrad)">TUITION</tspan>
+        </text>
+      </g>
+
+      <!-- Line 2: CLASS (Navy Wide-Tracked) -->
+      <g transform="translate(0, 194)" text-anchor="middle">
+        <text x="0" y="0" fill="#2c3b53" font-family="'Montserrat', system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" letter-spacing="11">
+          CLASS
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Palette & Verification Strip on Left Slab -->
+    <g transform="translate(32, 492)">
+      <line x1="0" y1="0" x2="426" y2="0" stroke="#f1f5f9" stroke-width="1.5" />
+      <g transform="translate(0, 16)">
+        <!-- Swatch 1: Deep Navy -->
+        <rect x="0" y="0" width="24" height="24" rx="6" fill="#16233b" />
+        <text x="32" y="16" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#16233B Navy</text>
+
+        <!-- Swatch 2: Sunset Orange -->
+        <rect x="145" y="0" width="24" height="24" rx="6" fill="#ea580c" />
+        <text x="177" y="16" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#EA580C Orange</text>
+
+        <!-- Swatch 3: Amber Gold -->
+        <rect x="295" y="0" width="24" height="24" rx="6" fill="#f59e0b" />
+        <text x="327" y="16" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#F59E0B Amber</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: REALISTIC BRANDING MOCKUPS ================= -->
+  <g transform="translate(585, 90)">
+
+    <!-- MOCKUP 1: SOCIAL MEDIA CAMPAIGN CREATIVE (Top Right) -->
+    <g transform="translate(0, 0)" filter="url(#softCardShadow)">
+      <rect x="0" y="0" width="555" height="268" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+
+      <!-- Post Top Bar -->
+      <rect x="0" y="0" width="555" height="48" rx="20" fill="#f8fafc" />
+      <rect x="0" y="28" width="555" height="20" fill="#f8fafc" />
+      <line x1="0" y1="48" x2="555" y2="48" stroke="#e2e8f0" stroke-width="1" />
+
+      <!-- Mini Profile Header -->
+      <g transform="translate(18, 11)">
+        <rect x="0" y="0" width="26" height="26" rx="7" fill="#16233b" />
+        <!-- Micro Book Emblem -->
+        <path d="M5 8 L13 12 L21 8 L21 18 L13 21 L5 18 Z" fill="#f97316" />
+        <text x="36" y="14" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Deep Tuition Class</text>
+        <circle cx="152" cy="10" r="4.5" fill="#0284c7" />
+        <path d="M150 10 L151.5 11.5 L154 8.5" stroke="#ffffff" stroke-width="1.2" fill="none" />
+        <text x="36" y="24" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500">Official Social Media Creative • Campaign 2026-27</text>
+      </g>
+
+      <!-- Creative Banner Interior Content -->
+      <g transform="translate(18, 62)">
+        <!-- Interior Gradient Banner Stage -->
+        <rect x="0" y="0" width="519" height="186" rx="14" fill="url(#postHeaderGrad)" />
+
+        <!-- Decorative Academic Circles / Curves -->
+        <circle cx="480" cy="30" r="90" fill="#ea580c" opacity="0.18" />
+        <circle cx="420" cy="150" r="70" fill="#0284c7" opacity="0.12" />
+
+        <!-- Left Campaign Text -->
+        <g transform="translate(24, 28)">
+          <rect x="0" y="0" width="135" height="22" rx="11" fill="#ea580c" />
+          <text x="67.5" y="15" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="800" letter-spacing="0.5" text-anchor="middle">
+            ADMISSIONS OPEN
+          </text>
+
+          <text x="0" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900" letter-spacing="-0.3">
+            Conceptual Excellence In
+          </text>
+          <text x="0" y="78" fill="#f97316" font-family="system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="-0.3">
+            Maths, Science &amp; Commerce
+          </text>
+
+          <!-- Feature Bullets -->
+          <g transform="translate(0, 96)" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">
+            <text x="0" y="0">✓ Expert Faculty &amp; Personal Attention</text>
+            <text x="0" y="18">✓ Regular Tests &amp; Doubt Clearing</text>
+          </g>
+        </g>
+
+        <!-- Right Visual Graphic Element in Banner -->
+        <g transform="translate(370, 20)">
+          <!-- Framed Logo Emblem inside Banner -->
+          <rect x="0" y="0" width="125" height="146" rx="12" fill="#ffffff" filter="url(#elevatedShadow)" />
+          <!-- Mini Logo Stamped inside -->
+          <g transform="translate(62, 58) scale(0.42)">
+            <!-- Left Book -->
+            <path d="M-5 130 C-35 125 -105 105 -145 110 L-160 95 L-160 -45 L-142 -55 C-105 -45 -35 -20 -5 10 Z" fill="#16233b" />
+            <path d="M5 130 C35 125 105 105 145 110 L160 95 L160 -45 L142 -55 C105 -45 35 -20 5 10 Z" fill="#16233b" />
+            <path d="M-12 118 C-42 112 -100 95 -136 98 L-136 -38 C-100 -32 -42 -10 -12 18 Z" fill="url(#leftPage2)" />
+            <path d="M12 118 C42 112 100 95 136 98 L136 -38 C100 -32 42 -10 12 18 Z" fill="#0f172a" />
+            <!-- Pencil -->
+            <path d="M-8 108 C15 70 85 55 105 -50 L125 -50 C105 65 30 85 8 108 Z" fill="#ffffff" />
+            <circle cx="0" cy="-10" r="28" fill="#ffffff" stroke="#16233b" stroke-width="4" />
+            <path d="M-10 -15 L0 -25 L10 -15" stroke="#ea580c" stroke-width="3" fill="none" />
+          </g>
+          <text x="62" y="112" fill="#16233b" font-family="'Montserrat', sans-serif" font-size="10" font-weight="900" text-anchor="middle">DEEP TUITION</text>
+          <text x="62" y="126" fill="#ea580c" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" letter-spacing="2" text-anchor="middle">CLASS</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- MOCKUP 2: BRANDED HARDCOVER NOTEBOOK & STATIONERY (Bottom Right) -->
+    <g transform="translate(0, 292)" filter="url(#softCardShadow)">
+      <rect x="0" y="0" width="555" height="268" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+
+      <!-- Left Sub-card: Student Workbook Mockup -->
+      <g transform="translate(24, 24)">
+        <!-- Hardcover Book Base -->
+        <rect x="0" y="0" width="240" height="220" rx="12" fill="#16233b" filter="url(#elevatedShadow)" />
+        
+        <!-- Spine Accent (Orange Leather Edge) -->
+        <rect x="0" y="0" width="16" height="220" rx="4" fill="#ea580c" />
+        <line x1="16" y1="0" x2="16" y2="220" stroke="#0f172a" stroke-width="1.5" />
+
+        <!-- Gold / Orange Ribbon Bookmark -->
+        <path d="M165 0 L165 48 L172 40 L179 48 L179 0 Z" fill="#f59e0b" opacity="0.95" />
+
+        <!-- Notebook Cover Gold Foil Embossed Logo -->
+        <g transform="translate(130, 95) scale(0.48)">
+          <!-- Embossed Book Silhouette -->
+          <path d="M-5 130 C-35 125 -105 105 -145 110 L-160 95 L-160 -45 L-142 -55 C-105 -45 -35 -20 -5 10 Z" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+          <path d="M5 130 C35 125 105 105 145 110 L160 95 L160 -45 L142 -55 C105 -45 35 -20 5 10 Z" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+          <path d="M-12 118 C-42 112 -100 95 -136 98 L-136 -38 C-100 -32 -42 -10 -12 18 Z" fill="#ea580c" />
+          <!-- Bulb -->
+          <circle cx="0" cy="-10" r="28" fill="#ffffff" stroke="#f59e0b" stroke-width="3" />
+        </g>
+        
+        <text x="130" y="165" fill="#f8fafc" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+          STUDENT WORKBOOK
+        </text>
+        <text x="130" y="182" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle" letter-spacing="1">
+          DEEP TUITION CLASS
+        </text>
+      </g>
+
+      <!-- Right Sub-card: Branded Faculty Card & Collateral Sheet -->
+      <g transform="translate(288, 24)">
+        <!-- Business / Identity Card -->
+        <rect x="0" y="0" width="242" height="140" rx="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#elevatedShadow)" />
+        
+        <g transform="translate(18, 22)">
+          <text x="0" y="12" fill="#16233b" font-family="'Montserrat', sans-serif" font-size="13" font-weight="900">
+            DEEP <tspan fill="#ea580c">TUITION</tspan>
+          </text>
+          <text x="0" y="24" fill="#64748b" font-family="system-ui, sans-serif" font-size="8" font-weight="700" letter-spacing="2">
+            CLASS • BRAND CARD
+          </text>
+
+          <!-- Divider -->
+          <line x1="0" y1="36" x2="206" y2="36" stroke="#fed7aa" stroke-width="1" />
+
+          <text x="0" y="56" fill="#1e293b" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">
+            Academic Excellence &amp; Coaching
+          </text>
+          <text x="0" y="72" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500">
+            Grades 8 to 12 • Science &amp; Commerce
+          </text>
+          <text x="0" y="88" fill="#ea580c" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700">
+            www.deeptuitionclass.com
+          </text>
+        </g>
+
+        <!-- Brand Asset Checklist Pill Bar below Card -->
+        <g transform="translate(0, 160)">
+          <rect x="0" y="0" width="242" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+          <g transform="translate(14, 24)" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#334155">
+            <text x="0" y="0">✦ Vector Master Files (.SVG/.AI)</text>
+            <text x="0" y="18">✦ Social Kit &amp; Print Stationery</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM EMBEDDED SUMMARY BAR ================= -->
+  <g transform="translate(60, 680)">
+    <rect x="0" y="0" width="1080" height="46" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <g transform="translate(24, 28)">
+      <text x="0" y="0" fill="#16233b" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.5">
+        CASE STUDY SCOPE
+      </text>
+      <text x="140" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11.5">
+        Brand Identity System • Logo Asset Mastery • Social Media Creatives • Educational Stationery &amp; Collaterals
+      </text>
+    </g>
+    <g transform="translate(940, 28)">
+      <text x="0" y="0" fill="#ea580c" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800">
+        RUDRAKSHA INFOTEK
+      </text>
+    </g>
+  </g>
+</svg>

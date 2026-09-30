@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgCanvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f0fdf4" />
+      <stop offset="100%" stop-color="#e6fcf5" />
+    </linearGradient>
+
+    <radialGradient id="tealAura" cx="70%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#10b981" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="tealBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="brandLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.09" />
+    </filter>
+
+    <filter id="floatCardShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#042f2e" flood-opacity="0.15" />
+    </filter>
+
+    <clipPath id="heroPhotoClip">
+      <rect x="0" y="0" width="460" height="380" rx="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="750" fill="url(#bgCanvasGrad)" />
+  <rect width="1200" height="750" fill="url(#tealAura)" />
+
+  <!-- Subtle Blueprint / Grid Lines -->
+  <g opacity="0.4" stroke="#ccfbf1" stroke-width="1">
+    <line x1="0" y1="130" x2="1200" y2="130" />
+    <line x1="0" y1="230" x2="1200" y2="230" />
+    <line x1="0" y1="330" x2="1200" y2="330" />
+    <line x1="0" y1="430" x2="1200" y2="430" />
+    <line x1="0" y1="530" x2="1200" y2="530" />
+    <line x1="0" y1="630" x2="1200" y2="630" />
+    <line x1="160" y1="0" x2="160" y2="750" />
+    <line x1="360" y1="0" x2="360" y2="750" />
+    <line x1="560" y1="0" x2="560" y2="750" />
+    <line x1="760" y1="0" x2="760" y2="750" />
+    <line x1="960" y1="0" x2="960" y2="750" />
+  </g>
+
+  <!-- ================= BROWSER WINDOW CHROME ================= -->
+  <rect x="0" y="0" width="1200" height="46" fill="#0f172a" />
+  <line x1="0" y1="46" x2="1200" y2="46" stroke="#1e293b" stroke-width="1" />
+
+  <!-- macOS Window Dots -->
+  <circle cx="28" cy="23" r="6" fill="#ef4444" />
+  <circle cx="48" cy="23" r="6" fill="#f59e0b" />
+  <circle cx="68" cy="23" r="6" fill="#10b981" />
+
+  <!-- Browser URL Pill -->
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <g transform="translate(374, 16)">
+    <rect x="1" y="5" width="10" height="8" rx="2" fill="#0d9488" />
+    <path d="M3 5V3a3 3 0 0 1 6 0v2" stroke="#0d9488" stroke-width="1.5" fill="none" />
+  </g>
+  <text x="394" y="27" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" letter-spacing="0.2">
+    https://alicestechsolutions.com
+  </text>
+  <text x="815" y="27" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="11">
+    ↻
+  </text>
+
+  <!-- ================= WEBSITE HEADER / NAVBAR ================= -->
+  <g transform="translate(60, 68)">
+    <rect x="0" y="0" width="1080" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)" />
+
+    <!-- Logo -->
+    <g transform="translate(24, 13)">
+      <rect x="0" y="0" width="34" height="34" rx="8" fill="url(#brandLogoGrad)" />
+      <!-- Graduation Cap / Growth Icon -->
+      <path d="M17 7L6 13L17 19L28 13L17 7Z" fill="#ffffff" />
+      <path d="M10 16.5V22C10 24.5 13.5 26.5 17 26.5C20.5 26.5 24 24.5 24 22V16.5" stroke="#ffffff" stroke-width="1.8" fill="none" />
+      <path d="M28 14V21" stroke="#a7f3d0" stroke-width="1.8" stroke-linecap="round" />
+
+      <text x="44" y="19" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900" letter-spacing="0.5">
+        ALICE'S TECH <tspan fill="#0d9488">SOLUTIONS</tspan>
+      </text>
+      <text x="44" y="31" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1">
+        CAREER GUIDANCE &amp; IT RECRUITMENT
+      </text>
+    </g>
+
+    <!-- Nav Items -->
+    <g transform="translate(490, 35)" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="600" fill="#475569">
+      <text x="0" y="0" fill="#0d9488">Home</text>
+      <text x="65" y="0">Job Openings</text>
+      <text x="175" y="0">IT Training</text>
+      <text x="270" y="0">Resume Help</text>
+      <text x="380" y="0">Interview Prep</text>
+    </g>
+
+    <!-- Header CTA Button -->
+    <g transform="translate(930, 11)">
+      <rect x="0" y="0" width="130" height="38" rx="19" fill="url(#tealBtnGrad)" />
+      <text x="65" y="24" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+        Get Started ↗
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= HERO CONTENT (LEFT SIDE) ================= -->
+  <g transform="translate(60, 165)">
+    <!-- Top Pill Badge -->
+    <rect x="0" y="0" width="310" height="32" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.2" />
+    <circle cx="16" cy="16" r="4" fill="#059669" />
+    <text x="28" y="21" fill="#065f46" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="0.8">
+      CAREER OPPORTUNITIES • IT TRAINING • GUIDANCE
+    </text>
+
+    <!-- Hero Title -->
+    <text x="0" y="78" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" letter-spacing="-0.8">
+      Your Gateway to
+    </text>
+    <text x="0" y="125" fill="#0d9488" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" letter-spacing="-0.8">
+      High-Impact Tech Careers.
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="168" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="400" line-height="23">
+      <tspan x="0" dy="0">Connecting passionate job seekers with leading tech employers through</tspan>
+      <tspan x="0" dy="24">structured IT training, tailored resume building, and personalized coaching.</tspan>
+    </text>
+
+    <!-- Search / Interactive Job Finder Widget -->
+    <g transform="translate(0, 230)">
+      <rect x="0" y="0" width="520" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#cardShadow)" />
+      <!-- Search Icon -->
+      <g transform="translate(18, 16)">
+        <circle cx="8" cy="8" r="6" stroke="#0d9488" stroke-width="2" fill="none" />
+        <line x1="13" y1="13" x2="19" y2="19" stroke="#0d9488" stroke-width="2" stroke-linecap="round" />
+      </g>
+      <text x="48" y="32" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500">
+        Search tech careers (e.g. Cloud Engineer, QA, Data, Full-Stack)...
+      </text>
+      <!-- Search Button -->
+      <rect x="400" y="6" width="112" height="40" rx="10" fill="url(#tealBtnGrad)" />
+      <text x="456" y="31" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle">
+        Find Jobs
+      </text>
+    </g>
+
+    <!-- Key Service Tags Grid -->
+    <g transform="translate(0, 310)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="165" height="34" rx="17" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <circle cx="16" cy="17" r="7" fill="#059669" />
+        <path d="M13 17L15 19L19 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+        <text x="32" y="21" fill="#166534" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">
+          Career Guidance
+        </text>
+      </g>
+
+      <g transform="translate(175, 0)">
+        <rect x="0" y="0" width="160" height="34" rx="17" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1" />
+        <circle cx="16" cy="17" r="7" fill="#0d9488" />
+        <path d="M13 17L15 19L19 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+        <text x="32" y="21" fill="#115e59" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">
+          IT Skill Training
+        </text>
+      </g>
+
+      <g transform="translate(345, 0)">
+        <rect x="0" y="0" width="175" height="34" rx="17" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <circle cx="16" cy="17" r="7" fill="#059669" />
+        <path d="M13 17L15 19L19 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+        <text x="32" y="21" fill="#166534" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">
+          Resume Polish
+        </text>
+      </g>
+
+      <g transform="translate(0, 44)">
+        <rect x="0" y="0" width="180" height="34" rx="17" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1" />
+        <circle cx="16" cy="17" r="7" fill="#0d9488" />
+        <path d="M13 17L15 19L19 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+        <text x="32" y="21" fill="#115e59" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">
+          Interview Coaching
+        </text>
+      </g>
+
+      <g transform="translate(190, 44)">
+        <rect x="0" y="0" width="175" height="34" rx="17" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1" />
+        <circle cx="16" cy="17" r="7" fill="#059669" />
+        <path d="M13 17L15 19L19 14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+        <text x="32" y="21" fill="#065f46" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">
+          Job Placement Aid
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= HERO IMAGERY & FLOATING STATS (RIGHT SIDE) ================= -->
+  <g transform="translate(680, 165)">
+    <!-- Main Photo Container -->
+    <g filter="url(#cardShadow)">
+      <rect x="0" y="0" width="460" height="380" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+      <g clip-path="url(#heroPhotoClip)">
+        <image href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" x="0" y="0" width="460" height="380" preserveAspectRatio="xMidYMid slice" />
+        <linearGradient id="photoOverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="60%" stop-color="#042f2e" stop-opacity="0" />
+          <stop offset="100%" stop-color="#042f2e" stop-opacity="0.7" />
+        </linearGradient>
+        <rect x="0" y="0" width="460" height="380" fill="url(#photoOverGrad)" />
+      </g>
+    </g>
+
+    <!-- FLOATING STAT CARD 1: JOB OPPORTUNITIES -->
+    <g transform="translate(-40, 30)" filter="url(#floatCardShadow)">
+      <rect x="0" y="0" width="200" height="74" rx="16" fill="#ffffff" stroke="#99f6e4" stroke-width="1.5" />
+      <circle cx="28" cy="37" r="16" fill="#ccfbf1" />
+      <!-- Briefcase Icon -->
+      <path d="M22 34V42H34V34H22Z" fill="#0d9488" />
+      <path d="M25 34V31C25 30 26 29 27 29H29C30 29 31 30 31 31V34" stroke="#0d9488" stroke-width="1.5" fill="none" />
+      <text x="54" y="32" fill="#0f766e" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900">
+        500+ Tech Roles
+      </text>
+      <text x="54" y="52" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.5">
+        ACTIVE RECRUITMENT
+      </text>
+    </g>
+
+    <!-- FLOATING STAT CARD 2: CAREER SUPPORT & IT TRAINING -->
+    <g transform="translate(230, 260)" filter="url(#floatCardShadow)">
+      <rect x="0" y="0" width="220" height="78" rx="16" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.5" />
+      <circle cx="28" cy="39" r="16" fill="#d1fae5" />
+      <!-- Graduation Icon -->
+      <path d="M28 32L20 36L28 40L36 36L28 32Z" fill="#059669" />
+      <path d="M23 38.5V43C23 44.5 25.5 45.5 28 45.5C30.5 45.5 33 44.5 33 43V38.5" stroke="#059669" stroke-width="1.5" fill="none" />
+      <text x="54" y="33" fill="#047857" font-family="system-ui, -apple-system, sans-serif" font-size="14.5" font-weight="900">
+        Industry IT Training
+      </text>
+      <text x="54" y="53" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.5">
+        HANDS-ON &amp; CERTIFIED
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM SERVICE BANNER STRIP ================= -->
+  <g transform="translate(60, 665)">
+    <rect x="0" y="0" width="1080" height="52" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)" />
+
+    <g transform="translate(30, 31)">
+      <text x="0" y="0" fill="#0d9488" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="1">CORE SERVICES</text>
+      <text x="115" y="0" fill="#334155" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Career Guidance • IT Training • Resume Enhancement • Interview Preparation • Job Assistance</text>
+    </g>
+
+    <g transform="translate(780, 31)">
+      <text x="0" y="0" fill="#059669" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="1">LIVE WEBSITE</text>
+      <text x="100" y="0" fill="#0d9488" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">alicestechsolutions.com ↗</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,506 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" fill="none">
+  <defs>
+    <!-- Background Canvas Gradients -->
+    <linearGradient id="luxuryBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16120e" />
+      <stop offset="50%" stop-color="#241b14" />
+      <stop offset="100%" stop-color="#0f0c09" />
+    </linearGradient>
+
+    <radialGradient id="goldAmbient" cx="35%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#996515" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="warmAmberAura" cx="80%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#c59b27" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Post Gradients -->
+    <linearGradient id="posterPaperBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcf8f2" />
+      <stop offset="45%" stop-color="#f7efe3" />
+      <stop offset="100%" stop-color="#ebdcc7" />
+    </linearGradient>
+
+    <linearGradient id="goldTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a5a1f" />
+      <stop offset="50%" stop-color="#b8860b" />
+      <stop offset="100%" stop-color="#7a4f1a" />
+    </linearGradient>
+
+    <linearGradient id="goldBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0b865" />
+      <stop offset="50%" stop-color="#c59b27" />
+      <stop offset="100%" stop-color="#916a18" />
+    </linearGradient>
+
+    <linearGradient id="espressoRibbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f1008" />
+      <stop offset="50%" stop-color="#2d170c" />
+      <stop offset="100%" stop-color="#190d06" />
+    </linearGradient>
+
+    <linearGradient id="bottomFooterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#23120a" />
+      <stop offset="50%" stop-color="#2e180e" />
+      <stop offset="100%" stop-color="#1c0e07" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="postShadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+    <filter id="insetCircleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="sideCardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#2c170d" flood-opacity="0.18" />
+    </filter>
+
+    <!-- Clip Paths -->
+    <clipPath id="postClip">
+      <rect x="0" y="0" width="600" height="600" rx="16" />
+    </clipPath>
+    <clipPath id="circleZoom1">
+      <circle cx="50" cy="50" r="48" />
+    </clipPath>
+    <clipPath id="circleZoom2">
+      <circle cx="48" cy="48" r="46" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="750" fill="url(#luxuryBgGrad)" />
+  <rect width="1200" height="750" fill="url(#goldAmbient)" />
+  <rect width="1200" height="750" fill="url(#warmAmberAura)" />
+
+  <!-- Architectural Background Grid Accents -->
+  <g opacity="0.08" stroke="#d4af37" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="50" y1="0" x2="50" y2="750" />
+    <line x1="680" y1="0" x2="680" y2="750" />
+    <line x1="1150" y1="0" x2="1150" y2="750" />
+    <line x1="0" y1="65" x2="1200" y2="65" />
+    <line x1="0" y1="685" x2="1200" y2="685" />
+  </g>
+
+  <!-- ================= TOP CASE STUDY BANNER BAR ================= -->
+  <g transform="translate(50, 18)">
+    <rect x="0" y="0" width="1100" height="38" rx="10" fill="#1e1711" stroke="#332419" stroke-width="1" />
+    <g transform="translate(18, 24)">
+      <circle cx="6" cy="0" r="4" fill="#c59b27" />
+      <text x="20" y="4" fill="#fcf8f2" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="11.5" font-weight="700" letter-spacing="1.2">
+        FASHION CAMPAIGN SHOWCASE
+      </text>
+      <text x="250" y="4" fill="#6b533d" font-family="system-ui, sans-serif" font-size="11.5">|</text>
+      <text x="268" y="4" fill="#d6be9f" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">
+        Het Creation • Festive Fashion Sale Social Media Creative (1:1 Square Feed Asset)
+      </text>
+    </g>
+    <g transform="translate(950, 24)">
+      <text x="0" y="4" fill="#e0b865" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+        INSTAGRAM CAMPAIGN
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT / MAIN: EXACT 1:1 HET CREATION CREATIVE ================= -->
+  <g transform="translate(50, 72)" filter="url(#postShadow)">
+    <!-- Subtle Golden Border Container -->
+    <rect x="-2" y="-2" width="604" height="604" rx="18" fill="none" stroke="url(#goldBorderGrad)" stroke-width="1.8" />
+
+    <g clip-path="url(#postClip)">
+      <!-- 1. Background Parchment & Hallway Lighting -->
+      <rect x="0" y="0" width="600" height="600" fill="url(#posterPaperBg)" />
+
+      <!-- Hallway Arch Archway Perspective on Right Side -->
+      <g opacity="0.95">
+        <!-- Luxury hallway backdrop photograph -->
+        <image href="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" x="240" y="0" width="370" height="560" preserveAspectRatio="xMidYMid slice" opacity="0.45" />
+        
+        <!-- Warm lighting wash over hallway -->
+        <linearGradient id="hallwayWash" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#fbf7f0" stop-opacity="1" />
+          <stop offset="30%" stop-color="#fbf7f0" stop-opacity="0.85" />
+          <stop offset="70%" stop-color="#eddcc6" stop-opacity="0.4" />
+          <stop offset="100%" stop-color="#dcc19e" stop-opacity="0.1" />
+        </linearGradient>
+        <rect x="180" y="0" width="420" height="560" fill="url(#hallwayWash)" />
+      </g>
+
+      <!-- Corner Golden Filigree Flourishes (Top-Left, Bottom-Left) -->
+      <g stroke="#c59b27" stroke-width="1.2" fill="none" opacity="0.65">
+        <!-- Top-Left Foliage -->
+        <path d="M 12 12 Q 35 12 48 24 Q 28 35 12 12 Z" fill="#c59b27" fill-opacity="0.15" />
+        <path d="M 16 16 C 30 25 35 45 42 60" />
+        <path d="M 28 22 C 40 20 52 28 58 36" />
+        <circle cx="58" cy="36" r="2" fill="#c59b27" />
+        <circle cx="42" cy="60" r="2" fill="#c59b27" />
+        <path d="M 10 38 Q 20 48 30 45" />
+
+        <!-- Bottom-Left Foliage (above location bar) -->
+        <g transform="translate(10, 500)">
+          <path d="M 6 36 Q 24 38 34 26 Q 20 18 6 36 Z" fill="#c59b27" fill-opacity="0.15" />
+          <path d="M 10 32 C 22 25 28 12 36 2" />
+          <circle cx="36" cy="2" r="2" fill="#c59b27" />
+        </g>
+      </g>
+
+      <!-- Top Golden Filigree Border Leaves around Header -->
+      <g stroke="#c59b27" stroke-width="1.2" fill="none" opacity="0.6" transform="translate(240, 6)">
+        <path d="M 0 14 Q 18 4 36 14 Q 18 20 0 14 Z" fill="#c59b27" fill-opacity="0.18" />
+        <path d="M 36 14 Q 54 4 72 14" />
+        <circle cx="72" cy="14" r="2" fill="#c59b27" />
+        <path d="M 18 4 Q 26 -4 34 2" />
+      </g>
+
+      <!-- 2. TOP-LEFT LOGO: HET CREATION -->
+      <g transform="translate(26, 16)">
+        <!-- Fashion Illustrated Sketch (Woman in ethnic outfit) -->
+        <g transform="translate(14, 6)">
+          <!-- Hair & Silhouette -->
+          <path d="M 14 6 C 11 3 13 -2 17 -1 C 21 0 20 5 18 8" fill="none" stroke="#e07a5f" stroke-width="1.6" stroke-linecap="round" />
+          <circle cx="16" cy="4" r="2.5" fill="#f4a261" />
+          <!-- Neck & Bodice -->
+          <path d="M 16 8 L 16 16 L 12 24 L 20 24 Z" fill="none" stroke="#2a9d8f" stroke-width="1.4" stroke-linecap="round" />
+          <!-- Flowing Kurta / Outfit with Floral motifs -->
+          <path d="M 12 24 L 6 56 C 12 58 20 58 26 56 L 20 24" fill="none" stroke="#2a9d8f" stroke-width="1.4" />
+          <line x1="16" y1="24" x2="16" y2="56" stroke="#2a9d8f" stroke-width="1" stroke-dasharray="2 2" />
+          <!-- Dupatta Drape in Coral -->
+          <path d="M 12 18 C 5 28 3 44 2 54 C 5 57 8 55 9 52 C 10 40 12 28 15 22" fill="none" stroke="#e76f51" stroke-width="1.4" stroke-linecap="round" />
+          <!-- Little floral print dots on outfit -->
+          <circle cx="10" cy="46" r="1" fill="#e76f51" />
+          <circle cx="14" cy="50" r="1" fill="#2a9d8f" />
+          <circle cx="18" cy="48" r="1" fill="#e76f51" />
+          <circle cx="22" cy="52" r="1" fill="#2a9d8f" />
+          <!-- Feet / Heels -->
+          <line x1="12" y1="56" x2="11" y2="62" stroke="#264653" stroke-width="1.2" />
+          <line x1="20" y1="56" x2="21" y2="62" stroke="#264653" stroke-width="1.2" />
+        </g>
+
+        <!-- Brand Wordmark Calligraphy -->
+        <g transform="translate(68, 6)">
+          <!-- "Het" in bold custom brush calligraphy -->
+          <g fill="#2c170d">
+            <!-- Letter H -->
+            <path d="M 6 36 C 8 28 10 16 11 6 C 12 3 15 2 17 4 C 18 7 16 14 15 22 C 18 16 23 12 28 14 C 33 16 33 22 31 32 C 30 36 29 39 31 40 C 33 41 35 38 36 34 L 38 35 C 36 41 32 44 28 42 C 25 40 26 35 27 30 C 29 22 28 18 24 17 C 20 16 16 20 14 26 C 12 32 10 40 9 44 C 8 47 5 46 6 36 Z" />
+            <!-- Letter e -->
+            <path d="M 37 32 C 37 25 42 22 47 22 C 53 22 55 26 54 33 L 42 34 C 42 38 45 42 50 41 C 53 40 55 37 56 35 L 58 37 C 56 41 52 44 47 44 C 41 44 37 39 37 32 Z M 49 25 C 45 25 43 28 42 31 L 50 30 C 51 27 49 25 49 25 Z" />
+            <!-- Letter t -->
+            <path d="M 62 14 C 64 14 65 16 65 18 L 65 24 L 72 24 L 72 27 L 65 27 L 64 38 C 64 41 66 43 69 42 C 71 41 72 39 73 38 L 74 40 C 72 43 69 45 66 45 C 61 45 60 41 60 36 L 61 27 L 57 27 L 57 24 L 61 24 L 62 14 Z" />
+            <!-- Sweeping decorative brush curve / tail -->
+            <path d="M 12 40 C 26 48 50 50 78 46 C 88 44 98 38 106 32 C 107 33 107 35 106 36 C 96 43 85 49 74 51 C 46 56 22 52 8 43 Z" />
+          </g>
+
+          <!-- "Creation" in refined script -->
+          <text x="68" y="58" fill="#2c170d" font-family="'Playfair Display', 'Cinzel', Georgia, serif" font-size="16" font-weight="700" letter-spacing="1">
+            Creation
+          </text>
+        </g>
+      </g>
+
+      <!-- Decorative Divider with Diamond Crest under Logo -->
+      <g stroke="#c59b27" stroke-width="1.2" opacity="0.8" transform="translate(24, 96)">
+        <line x1="0" y1="0" x2="210" y2="0" />
+        <!-- Diamond Center Emblem -->
+        <path d="M 105 -5 L 110 0 L 105 5 L 100 0 Z" fill="#c59b27" />
+        <circle cx="95" cy="0" r="1.5" fill="#c59b27" />
+        <circle cx="115" cy="0" r="1.5" fill="#c59b27" />
+      </g>
+
+      <!-- 3. HEADLINE: FASHION SALE -->
+      <g transform="translate(26, 128)">
+        <!-- "FASHION" in tracked luxury serif -->
+        <text x="56" y="0" fill="#845722" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="18" font-weight="700" letter-spacing="4">
+          FASHION
+        </text>
+        <!-- "SALE" in giant, elegant dark chocolate serif -->
+        <text x="2" y="58" fill="#2c170d" font-family="'Playfair Display', 'Cinzel', Georgia, serif" font-size="62" font-weight="900" letter-spacing="-1">
+          SALE
+        </text>
+
+        <!-- Ornate golden scroll divider below SALE -->
+        <g stroke="#c59b27" stroke-width="1.4" opacity="0.85" transform="translate(2, 74)">
+          <line x1="0" y1="0" x2="208" y2="0" />
+          <!-- Central Scroll Finial -->
+          <path d="M 94 0 Q 104 -6 104 0 Q 104 6 114 0" fill="none" />
+          <circle cx="104" cy="0" r="2.5" fill="#c59b27" />
+        </g>
+      </g>
+
+      <!-- 4. 25% DISCOUNT CIRCULAR PROMOTION BADGE -->
+      <g transform="translate(130, 290)" filter="url(#badgeShadow)">
+        <!-- Outer Golden Sunburst Dashes -->
+        <g stroke="#c59b27" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+          <line x1="-92" y1="-50" x2="-80" y2="-44" />
+          <line x1="-98" y1="-25" x2="-84" y2="-22" />
+          <line x1="-98" y1="20" x2="-84" y2="18" />
+          <line x1="-90" y1="46" x2="-78" y2="40" />
+          <line x1="80" y1="-44" x2="92" y2="-50" />
+          <line x1="84" y1="-22" x2="98" y2="-25" />
+          <line x1="84" y1="18" x2="98" y2="20" />
+          <line x1="78" y1="40" x2="90" y2="46" />
+        </g>
+
+        <!-- Outer Distressed / Brushed Golden Ring -->
+        <circle cx="0" cy="0" r="82" fill="none" stroke="#c59b27" stroke-width="3" stroke-dasharray="8 3" opacity="0.9" />
+        <!-- Mid Gold Ring -->
+        <circle cx="0" cy="0" r="77" fill="none" stroke="#996515" stroke-width="1.5" />
+        <!-- Inner Parchment Cream Circle -->
+        <circle cx="0" cy="0" r="72" fill="#fdfbf7" stroke="#ebdcc7" stroke-width="2" />
+
+        <!-- Badge Typography: FLAT 25% DISCOUNT -->
+        <text x="0" y="-34" fill="#2c170d" font-family="'Montserrat', system-ui, sans-serif" font-size="16" font-weight="900" letter-spacing="2" text-anchor="middle">
+          FLAT
+        </text>
+        <text x="0" y="14" fill="#2c170d" font-family="'Playfair Display', Georgia, serif" font-size="54" font-weight="900" letter-spacing="-1" text-anchor="middle">
+          25%
+        </text>
+        <text x="0" y="36" fill="#2c170d" font-family="'Montserrat', system-ui, sans-serif" font-size="13" font-weight="900" letter-spacing="1.5" text-anchor="middle">
+          DISCOUNT
+        </text>
+
+        <!-- Curved Dark Espresso Ribbon across bottom of circle -->
+        <g transform="translate(0, 48)">
+          <!-- Ribbon Body with Swallowtail Fold Endings -->
+          <path d="M -94 10 L -80 -8 L 80 -8 L 94 10 L 84 18 L 80 14 L -80 14 L -84 18 Z" fill="url(#espressoRibbonGrad)" stroke="#c59b27" stroke-width="1" />
+          <!-- Ribbon Text -->
+          <text x="0" y="6" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="11.5" font-weight="900" letter-spacing="1.2" text-anchor="middle">
+            ON ALL COLLECTIONS
+          </text>
+        </g>
+      </g>
+
+      <!-- 5. SALE DATES BADGE -->
+      <g transform="translate(42, 396)">
+        <rect x="0" y="0" width="186" height="38" rx="8" fill="#f5ede0" stroke="#c59b27" stroke-width="1" />
+        <!-- Calendar Icon in Chocolate Brown -->
+        <g transform="translate(10, 8)" stroke="#2c170d" stroke-width="1.8" fill="none">
+          <rect x="0" y="0" width="22" height="20" rx="3" />
+          <line x1="0" y1="7" x2="22" y2="7" />
+          <line x1="5" y1="-2" x2="5" y2="2" stroke-linecap="round" />
+          <line x1="17" y1="-2" x2="17" y2="2" stroke-linecap="round" />
+          <circle cx="6" cy="11" r="1" fill="#2c170d" stroke="none" />
+          <circle cx="11" cy="11" r="1" fill="#2c170d" stroke="none" />
+          <circle cx="16" cy="11" r="1" fill="#2c170d" stroke="none" />
+          <circle cx="6" cy="15" r="1" fill="#2c170d" stroke="none" />
+          <circle cx="11" cy="15" r="1" fill="#2c170d" stroke="none" />
+        </g>
+        <!-- Sale Dates Text -->
+        <g transform="translate(40, 14)">
+          <text x="0" y="0" fill="#6d4c26" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.8">
+            SALE DATES
+          </text>
+          <text x="0" y="16" fill="#2c170d" font-family="'Playfair Display', Georgia, serif" font-size="13.5" font-weight="900" letter-spacing="0.2">
+            1 TO 25 AUGUST
+          </text>
+        </g>
+      </g>
+
+      <!-- 6. LIMITED TIME OFFER & VISIT STORE CTA BUTTON -->
+      <g transform="translate(36, 452)">
+        <!-- "— Limited Time Offer —" in elegant cursive script -->
+        <text x="96" y="0" fill="#2c170d" font-family="'Brush Script MT', 'Dancing Script', 'Playfair Display', cursive, serif" font-size="20" font-weight="700" font-style="italic" text-anchor="middle">
+          — Limited Time Offer —
+        </text>
+
+        <!-- Dark Espresso Pill Button: VISIT STORE ➔ -->
+        <g transform="translate(36, 12)">
+          <rect x="0" y="0" width="124" height="28" rx="14" fill="#2c170d" />
+          <text x="18" y="18" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="0.8">
+            VISIT STORE
+          </text>
+          <!-- Arrow Inside Circle Icon -->
+          <circle cx="106" cy="14" r="8" fill="#ffffff" />
+          <path d="M 103 14 L 108 14 M 106 11 L 109 14 L 106 17" stroke="#2c170d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </g>
+
+      <!-- 7. FASHION MODEL: HIGH-RES INDIAN MODEL IN OCHRE/GOLD SUIT -->
+      <g transform="translate(290, 10)">
+        <!-- Model Portrait Image from Unsplash (Indian fashion model in mustard gold festive ethnic wear) -->
+        <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=600&amp;q=85" x="-10" y="0" width="310" height="540" preserveAspectRatio="xMidYMin slice" />
+
+        <!-- Ambient Golden Light and Shading Gradient on Model's Left Flank -->
+        <linearGradient id="modelEdgeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#fcf8f2" stop-opacity="1" />
+          <stop offset="12%" stop-color="#fcf8f2" stop-opacity="0.75" />
+          <stop offset="28%" stop-color="#fcf8f2" stop-opacity="0.2" />
+          <stop offset="100%" stop-color="#fcf8f2" stop-opacity="0" />
+        </linearGradient>
+        <rect x="-10" y="0" width="120" height="540" fill="url(#modelEdgeFade)" />
+      </g>
+
+      <!-- 8. PRODUCT DETAIL INSET ZOOM CIRCLES (Right Flank) -->
+      <!-- Inset Zoom 1: Neckline Embroidery Detail -->
+      <g transform="translate(485, 80)" filter="url(#insetCircleShadow)">
+        <circle cx="50" cy="50" r="50" fill="#ffffff" stroke="url(#goldBorderGrad)" stroke-width="2.5" />
+        <g clip-path="url(#circleZoom1)">
+          <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=600&amp;q=85" x="-75" y="-30" width="250" height="250" preserveAspectRatio="xMidYMid slice" />
+          <!-- Embroidery highlight grid overlay -->
+          <circle cx="50" cy="50" r="48" fill="#d4af37" opacity="0.12" />
+        </g>
+      </g>
+
+      <!-- Inset Zoom 2: Hemline Fabric & Border Stitch Detail -->
+      <g transform="translate(498, 280)" filter="url(#insetCircleShadow)">
+        <circle cx="48" cy="48" r="48" fill="#ffffff" stroke="url(#goldBorderGrad)" stroke-width="2.5" />
+        <g clip-path="url(#circleZoom2)">
+          <image href="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=600&amp;q=85" x="-85" y="-120" width="250" height="250" preserveAspectRatio="xMidYMid slice" />
+          <!-- Warm texture overlay -->
+          <circle cx="48" cy="48" r="46" fill="#c59b27" opacity="0.12" />
+        </g>
+      </g>
+
+      <!-- 9. BOTTOM LOCATION STRIP (FULL WIDTH) -->
+      <g transform="translate(0, 542)">
+        <rect x="0" y="0" width="600" height="58" fill="url(#bottomFooterGrad)" />
+        <!-- Golden Location Teardrop Pin -->
+        <g transform="translate(85, 14)">
+          <g fill="#c59b27">
+            <path d="M 8 0 C 3.58 0 0 3.58 0 8 C 0 14 8 21 8 21 C 8 21 16 14 16 8 C 16 3.58 12.42 0 8 0 Z M 8 11 C 6.34 11 5 9.66 5 8 C 5 6.34 6.34 5 8 5 C 9.66 5 11 6.34 11 8 C 11 9.66 9.66 11 8 11 Z" />
+          </g>
+        </g>
+        <!-- Store Address in Clean Crisp White -->
+        <g transform="translate(112, 17)">
+          <text x="0" y="11" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.3">
+            SHOP NO 9, SHREE SIDDHESHWAR HAPPY HOME,
+          </text>
+          <text x="0" y="27" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="11.5" font-weight="800" letter-spacing="0.3">
+            OPP. MADHUVAN ELEGANCE, HARNI, VADODARA – 390022
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: CAMPAIGN CASE STUDY METADATA & SPECS ================= -->
+  <g transform="translate(685, 72)">
+    <!-- Card 1: Social Media Post Specs & Campaign Card -->
+    <g filter="url(#sideCardShadow)">
+      <rect x="0" y="0" width="465" height="280" rx="16" fill="#18130e" stroke="#2d2015" stroke-width="1.2" />
+
+      <!-- Card Top Header -->
+      <g transform="translate(24, 24)">
+        <rect x="0" y="0" width="130" height="24" rx="12" fill="#c59b27" opacity="0.18" />
+        <text x="65" y="16" fill="#e0b865" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.8" text-anchor="middle">
+          CAMPAIGN ASSET
+        </text>
+        <text x="310" y="17" fill="#8c735d" font-family="system-ui, sans-serif" font-size="11" font-weight="600">
+          DIM: 1080 × 1080 PX
+        </text>
+
+        <!-- Project Title -->
+        <text x="0" y="54" fill="#fcf8f2" font-family="'Playfair Display', Georgia, serif" font-size="21" font-weight="900" letter-spacing="-0.3">
+          Het Creation
+        </text>
+        <text x="0" y="76" fill="#c59b27" font-family="system-ui, sans-serif" font-size="14" font-weight="700">
+          Festive Fashion Sale Campaign Creative
+        </text>
+
+        <!-- Campaign Objective Overview -->
+        <text x="0" y="110" fill="#bfa58a" font-family="system-ui, sans-serif" font-size="12.5" font-weight="400">
+          A luxury festive fashion social media creative conceptualized to
+        </text>
+        <text x="0" y="128" fill="#bfa58a" font-family="system-ui, sans-serif" font-size="12.5" font-weight="400">
+          drive local boutique footfall in Vadodara with elegant storytelling.
+        </text>
+
+        <!-- Feature List Badges -->
+        <g transform="translate(0, 155)">
+          <g transform="translate(0, 0)">
+            <circle cx="8" cy="8" r="4" fill="#c59b27" />
+            <text x="20" y="12" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">High-Impact 25% Flat Promotional Discount Architecture</text>
+          </g>
+          <g transform="translate(0, 28)">
+            <circle cx="8" cy="8" r="4" fill="#c59b27" />
+            <text x="20" y="12" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Ethnic Designer Outfits &amp; Close-Up Fabric Stitch Insets</text>
+          </g>
+          <g transform="translate(0, 56)">
+            <circle cx="8" cy="8" r="4" fill="#c59b27" />
+            <text x="20" y="12" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Prominent Store Coordinates for Vadodara Boutiques</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Brand Color Palette & Design Breakdown -->
+    <g transform="translate(0, 305)" filter="url(#sideCardShadow)">
+      <rect x="0" y="0" width="465" height="295" rx="16" fill="#18130e" stroke="#2d2015" stroke-width="1.2" />
+
+      <g transform="translate(24, 24)">
+        <text x="0" y="12" fill="#fcf8f2" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="0.5">
+          CAMPAIGN DESIGN PILLARS
+        </text>
+
+        <!-- 3 Feature Boxes -->
+        <g transform="translate(0, 28)">
+          <!-- Pillar 1 -->
+          <rect x="0" y="0" width="130" height="66" rx="10" fill="#241b14" stroke="#3d2c1f" stroke-width="1" />
+          <text x="65" y="28" fill="#fcf8f2" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Campaign</text>
+          <text x="65" y="44" fill="#e0b865" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Creative</text>
+
+          <!-- Pillar 2 -->
+          <rect x="143" y="0" width="130" height="66" rx="10" fill="#241b14" stroke="#3d2c1f" stroke-width="1" />
+          <text x="208" y="28" fill="#fcf8f2" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Fashion</text>
+          <text x="208" y="44" fill="#e0b865" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Promotion</text>
+
+          <!-- Pillar 3 -->
+          <rect x="286" y="0" width="130" height="66" rx="10" fill="#241b14" stroke="#3d2c1f" stroke-width="1" />
+          <text x="351" y="28" fill="#fcf8f2" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Brand</text>
+          <text x="351" y="44" fill="#e0b865" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Visuals</text>
+        </g>
+
+        <!-- Color Swatches -->
+        <g transform="translate(0, 120)">
+          <text x="0" y="10" fill="#a89279" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">
+            ROYAL FESTIVE COLOR PALETTE
+          </text>
+
+          <g transform="translate(0, 24)">
+            <!-- Swatch 1: Royal Ochre Gold -->
+            <rect x="0" y="0" width="22" height="22" rx="6" fill="#c59b27" stroke="#ffffff" stroke-width="1" />
+            <text x="30" y="15" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#C59B27 Metallic Ochre</text>
+
+            <!-- Swatch 2: Espresso Chocolate -->
+            <rect x="200" y="0" width="22" height="22" rx="6" fill="#2c170d" stroke="#6b533d" stroke-width="1" />
+            <text x="230" y="15" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#2C170D Deep Espresso</text>
+          </g>
+
+          <g transform="translate(0, 58)">
+            <!-- Swatch 3: Vintage Parchment -->
+            <rect x="0" y="0" width="22" height="22" rx="6" fill="#fcf8f2" stroke="#d6be9f" stroke-width="1" />
+            <text x="30" y="15" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#FCF8F2 Warm Parchment</text>
+
+            <!-- Swatch 4: Pure White -->
+            <rect x="200" y="0" width="22" height="22" rx="6" fill="#ffffff" stroke="#d6be9f" stroke-width="1" />
+            <text x="230" y="15" fill="#f2e8dc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">#FFFFFF Display White</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM EMBEDDED SUMMARY BAR ================= -->
+  <g transform="translate(50, 696)">
+    <rect x="0" y="0" width="1100" height="38" rx="10" fill="#1e1711" stroke="#332419" stroke-width="1" />
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" fill="#fcf8f2" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="0.5">
+        CASE STUDY SCOPE
+      </text>
+      <text x="135" y="0" fill="#a89279" font-family="system-ui, sans-serif" font-size="11">
+        Festive Fashion Campaign • Promotional Creative • Indian Ethnic Wear Showcase • Vadodara Retail Branding
+      </text>
+    </g>
+    <g transform="translate(965, 24)">
+      <text x="0" y="0" fill="#e0b865" font-family="system-ui, sans-serif" font-size="11" font-weight="800">
+        RUDRAKSHA INFOTEK
+      </text>
+    </g>
+  </g>
+</svg>
