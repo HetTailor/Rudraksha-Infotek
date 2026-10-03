@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Rudraksha-Infotek/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
