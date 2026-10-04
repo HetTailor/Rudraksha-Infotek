@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
+import { SeoHead } from './components/SeoHead';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -41,6 +42,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <SeoHead />
       <div className="min-h-screen bg-[#FAFAFA] text-zinc-900 flex flex-col font-sans selection:bg-zinc-950 selection:text-white">
         {/* Global Multi-Page Navigation */}
         <Navbar />

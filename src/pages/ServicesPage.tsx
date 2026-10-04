@@ -361,7 +361,7 @@ export const ServicesPage: React.FC = () => {
                       {/* Auto-adjusted sharp photo */}
                       <img
                         src={service.image}
-                        alt={service.title}
+                        alt={`${service.title} Services – ${service.tagline} | Rudraksha Infotek`}
                         referrerPolicy="no-referrer"
                         loading={index === 0 ? 'eager' : 'lazy'}
                         decoding="async"

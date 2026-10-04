@@ -1,0 +1,6 @@
+# robots.txt for Rudraksha Infotek
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rudrakshainfotek.in/sitemap.xml

@@ -74,7 +74,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             )}
           <img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} Detailed Project Showcase – Rudraksha Infotek`}
             referrerPolicy="no-referrer"
             onError={(e) => {
               if (project.id === 'het-creation') {

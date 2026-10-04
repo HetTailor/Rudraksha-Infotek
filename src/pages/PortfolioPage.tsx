@@ -224,6 +224,7 @@ export const PortfolioPage: React.FC = () => {
       {/* Gallery Grid */}
       <section ref={galleryRef} className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">Featured Client Case Studies & Deliverables</h2>
           <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project, index) => {
@@ -316,7 +317,7 @@ export const PortfolioPage: React.FC = () => {
                       {/* Complete original image displayed with zero cropping, distortion, zoom, scale, or color tint */}
                       <img
                         src={project.image}
-                        alt={project.title}
+                        alt={`${project.title} – ${project.categoryLabel} Project by Rudraksha Infotek`}
                         referrerPolicy="no-referrer"
                         loading={index < 2 ? 'eager' : 'lazy'}
                         decoding="async"

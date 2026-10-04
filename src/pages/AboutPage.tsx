@@ -264,9 +264,9 @@ export const AboutPage: React.FC = () => {
                     HT
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-zinc-950">
+                    <h2 className="text-xl font-bold text-zinc-950">
                       {COMPANY_INFO.founder}
-                    </h3>
+                    </h2>
                     <p className="text-xs font-bold text-[#3C2B99] uppercase tracking-wider">
                       {COMPANY_INFO.role}
                     </p>
@@ -340,7 +340,7 @@ export const AboutPage: React.FC = () => {
                     <div className="w-8 h-8 rounded-full bg-[#3C2B99]/10 border border-[#D4B26B]/40 text-[#3C2B99] flex items-center justify-center">
                       <ShieldCheck className="w-4 h-4 text-[#D4B26B]" />
                     </div>
-                    <h4 className="text-sm font-bold text-zinc-950">Direct Oversight</h4>
+                    <h3 className="text-sm font-bold text-zinc-950">Direct Oversight</h3>
                   </div>
                   <p className="text-xs text-zinc-600 leading-relaxed">
                     No middlemen or junior outsources. Every milestone is curated and approved directly by Het Tailor.
@@ -355,7 +355,7 @@ export const AboutPage: React.FC = () => {
                     <div className="w-8 h-8 rounded-full bg-[#3C2B99]/10 border border-[#D4B26B]/40 text-[#3C2B99] flex items-center justify-center">
                       <Award className="w-4 h-4 text-[#D4B26B]" />
                     </div>
-                    <h4 className="text-sm font-bold text-zinc-950">High-Impact Precision</h4>
+                    <h3 className="text-sm font-bold text-zinc-950">High-Impact Precision</h3>
                   </div>
                   <p className="text-xs text-zinc-600 leading-relaxed">
                     Polished aesthetic that puts your company&apos;s value propositions and products front-and-center.

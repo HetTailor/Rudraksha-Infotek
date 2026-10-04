@@ -813,7 +813,7 @@ export const HomePage: React.FC = () => {
             <div className="pt-8 flex items-center gap-3.5 border-t border-[#D4B26B]/30 mt-8">
               <img
                 src={COMPANY_INFO.ceoImage}
-                alt={COMPANY_INFO.founder}
+                alt={`${COMPANY_INFO.founder} – ${COMPANY_INFO.role} of ${COMPANY_INFO.name}`}
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"

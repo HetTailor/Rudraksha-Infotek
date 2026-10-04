@@ -11,7 +11,10 @@ export const COMPANY_INFO = {
   role: 'Founder & CEO',
   email: 'rudraksha.infotek@gmail.com',
   phone: '+91 97268 03078',
-  location: 'India • Serving Global Clients',
+  location: 'Vadodara, Gujarat, India • Serving Global Clients',
+  city: 'Vadodara',
+  state: 'Gujarat',
+  country: 'India',
   instagram: 'https://www.instagram.com/rudraksha_infotek/',
   logoUrl: '/images/logo-trimmed.png',
   logoFallback: 'https://het.assistwebstudio.in/wp-content/uploads/2026/09/Logog-scaled.png',
@@ -25,9 +28,9 @@ export const COMPANY_INFO = {
     'At Rudraksha Infotek, our goal is to turn ideas into impactful digital experiences. We strive to build long-term relationships with our clients through quality, trust, and dedication.',
   ],
   aboutStory:
-    'RUDRAKSHA INFOTEK is an IT and digital creative company dedicated to helping businesses build a strong and professional online presence.',
+    'Rudraksha Infotek is an IT and digital creative agency in Vadodara, dedicated to helping businesses build a strong, credible, and professional online presence.',
   aboutDetail:
-    'From designing responsive websites to managing social media and creating engaging graphics, we provide creative and practical digital solutions tailored to your brand.',
+    'From designing modern, responsive websites and app interfaces to managing strategic social media marketing and brand identities, we deliver practical and creative digital solutions tailored to your business.',
   aboutPhilosophy:
     'We believe that every business has a unique story — our job is to present that story beautifully to the world.',
 };

@@ -52,7 +52,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           >
             <img
               src={COMPANY_INFO.logoUrl}
-              alt={COMPANY_INFO.name}
+              alt="Rudraksha Infotek - IT & Digital Creative Agency Logo"
               onError={(e) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = COMPANY_INFO.logoFallback;

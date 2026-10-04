@@ -55,7 +55,7 @@ const LogoCard: React.FC<{ brand: BrandLogoItem }> = ({ brand }) => {
     >
       <img
         src={currentSrc}
-        alt={brand.name}
+        alt={`${brand.name} - Client of Rudraksha Infotek`}
         onError={handleError}
         loading="lazy"
         draggable={false}

@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
             <Link to="/" className="inline-flex items-center group focus:outline-none py-0.5">
               <img
                 src={COMPANY_INFO.logoUrl}
-                alt={COMPANY_INFO.name}
+                alt="Rudraksha Infotek - IT & Digital Creative Agency Logo"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
                   e.currentTarget.src = COMPANY_INFO.logoFallback;
